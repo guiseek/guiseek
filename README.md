@@ -2,7 +2,7 @@
 
 
 <p>
-  <span style="font-size:24px">👨‍💻</span> Engenheiro front-end no Itaú
+  <span style="font-size:24px">👨‍💻</span> Engenheiro front-end
 </p>
 <p>
   <span style="font-size:24px">📚</span> Estudando
