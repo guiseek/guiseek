@@ -7,7 +7,7 @@
 </h3>
 
 <p>
-  Já trabalhei como full-stack boa parte da carreira, nos últimos anos estive mais focado em arquitetura front-end. Gosto muito de avaliar e aprender novas tecnologias com potêncial (se for o caso).
+  Já trabalhei como full-stack boa parte da carreira, nos últimos anos estive mais focado em arquitetura front-end. Gosto muito de avaliar e aprender novas tecnologias com potencial (se for o caso).
 </p>
 
 <h3>
@@ -61,9 +61,9 @@ Linguagens e ferramentas que uso ou já usei no dia-a-dia.
 ![JIRA](https://img.shields.io/badge/-JIRA-0052CC?style=flat-square&logo=jira)
 ![VSCode](https://img.shields.io/badge/-VSCode-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)
 
-| Langs | Stats |
+<!-- | Langs | Stats |
 | --- | --- |
-| ![](https://github-readme-stats.vercel.app/api/top-langs/?username=guiseek&hide=php,html) | ![](https://github-readme-stats.vercel.app/api?username=guiseek&theme=default) |
+| ![](https://github-readme-stats.vercel.app/api/top-langs/?username=guiseek&hide=php,html) | ![](https://github-readme-stats.vercel.app/api?username=guiseek&theme=default) | -->
 
 ---
 
