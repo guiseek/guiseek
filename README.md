@@ -5,6 +5,7 @@
 <h3>
   <span style="font-size:24px">👨‍💻</span> Sou engenheiro de software e trabalho no Itaú.
 </h3>
+<img src="https://seek.dev.br/name" />
 
 <p>
   Já trabalhei como full-stack boa parte da carreira, nos últimos anos estive mais focado em arquitetura front-end. Gosto muito de avaliar e aprender novas tecnologias com potencial (se for o caso).

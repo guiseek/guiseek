@@ -1,4 +1,4 @@
-import { Controller, Get, Render } from '@nestjs/common';
+import { Controller, Get, Header, Render, Req, Res } from '@nestjs/common';
 
 import { AppService } from './app.service';
 import { TodosService } from './todo/todo.service';
@@ -25,6 +25,7 @@ export class AppController {
 
   @Get('name')
   @Render('name')
+  @Header('Content-Type', 'image/svg+xml')
   name() {
     return {
       name: this.appService.getName()
