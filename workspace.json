@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "projects": {
+    "todos": {
+      "root": "apps/todos",
+      "sourceRoot": "apps/todos/src",
+      "projectType": "application",
+      "prefix": "todos",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@nrwl/node:build",
+          "options": {
+            "outputPath": "dist/apps/todos",
+            "main": "apps/todos/src/main.ts",
+            "tsConfig": "apps/todos/tsconfig.app.json",
+            "assets": ["apps/todos/src/assets"]
+          },
+          "configurations": {
+            "production": {
+              "optimization": true,
+              "extractLicenses": true,
+              "inspect": false,
+              "fileReplacements": [
+                {
+                  "replace": "apps/todos/src/environments/environment.ts",
+                  "with": "apps/todos/src/environments/environment.prod.ts"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@nrwl/node:execute",
+          "options": {
+            "buildTarget": "todos:build"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "tsConfig": [
+              "apps/todos/tsconfig.app.json",
+              "apps/todos/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!apps/todos/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/todos/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "defaultCollection": "@nrwl/nest"
+  },
+  "defaultProject": "todos"
+}
