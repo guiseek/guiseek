@@ -5,4 +5,7 @@ export class AppService {
   getData(): { message: string } {
     return { message: 'Welcome to todos!' };
   }
+  getName(): string {
+    return 'Guilherme';
+  }
 }
