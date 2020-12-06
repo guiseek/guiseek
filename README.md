@@ -48,8 +48,8 @@ Linguagens e ferramentas que uso ou já usei no dia-a-dia.
 
 - apps
   - samples
-    - [ ] ngpeer-client
-    - [-] ngpeer-server
+    - [x] ngpeer-client
+    - [x] ngpeer-server
   - content
     - [ ] blog-dektop
     - [ ] blog-mobile
@@ -57,8 +57,8 @@ Linguagens e ferramentas que uso ou já usei no dia-a-dia.
 - libs
   - ngpeer
     - [x] core
-    - [ ] client
-    - [ ] server
+    - [x] client
+    - [x] server
   - blog
     - [ ] assets
     - [ ] domain

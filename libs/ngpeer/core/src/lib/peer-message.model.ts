@@ -12,21 +12,30 @@ export interface IPeerIceMessage extends IPeerMessage {
   ice: RTCIceCandidate
 }
 
+export type PeerMessages = IPeerSdpMessage & IPeerIceMessage
+
 export class PeerMessage {
   static offer(
-    type: PeerAction,
+    // type: PeerAction,
     from: string,
     to: string,
     sdp: RTCSessionDescriptionInit
   ): IPeerSdpMessage {
-    return { type, from, to, sdp }
+    return { type: PeerAction.Offer, from, to, sdp }
+  }
+  static answer(
+    from: string,
+    to: string,
+    sdp: RTCSessionDescriptionInit
+  ): IPeerSdpMessage {
+    return { type: PeerAction.Answer, from, to, sdp }
   }
   static candidate(
-    type: PeerAction,
+    // type: PeerAction,
     from: string,
     to: string,
     ice: RTCIceCandidate
   ): IPeerIceMessage {
-    return { type, from, to, ice }
+    return { type: PeerAction.IceCandidate, from, to, ice }
   }
 }

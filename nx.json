@@ -31,6 +31,16 @@
     },
     "ngpeer-server": {
       "tags": ["side:server"]
+    },
+    "ngpeer-client": {
+      "tags": ["side:client", "type:feature"]
+    },
+    "samples-ngpeer-client": {
+      "tags": ["side:client", "type:app"]
+    },
+    "samples-ngpeer-client-e2e": {
+      "tags": [],
+      "implicitDependencies": ["samples-ngpeer-client"]
     }
   }
 }
