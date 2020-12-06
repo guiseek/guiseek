@@ -22,5 +22,9 @@
       }
     }
   },
-  "projects": {}
+  "projects": {
+    "ngpeer-core": {
+      "tags": ["side:common", "type:util"]
+    }
+  }
 }
