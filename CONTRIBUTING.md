@@ -1,5 +1,11 @@
 # Contributing
 
+## Comandos úteis
+
+Execute `npm run ngpeer:samples` para os apps server e client do projeto *ngpeer*
+
+---
+
 > *This project was generated using [Nx](https://nx.dev).*
 >
 > There are also many [community plugins](https://nx.dev/nx-community) you could add.
