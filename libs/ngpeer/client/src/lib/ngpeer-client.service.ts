@@ -1,26 +1,30 @@
 import { Inject, Injectable } from '@angular/core';
-import * as io from 'socket.io-client';
+import * as SocketClient from 'socket.io-client';
 import { bindCallback } from 'rxjs';
 
+import { getUserMedia } from './utilities';
 import { NgPeerConfig, NGPEER_CONFIG, rtcOfferOptions } from './config';
-import { PeerConnection, PeerAction, PeerMessage, PeerMessages } from '@ngpeer/core';
+import { PeerConnection, PeerAction, PeerMessage, PeerMessages, PeerClient } from '@ngpeer/core';
+import { NgPeerClientStoreService } from './ngpeer-client-store.service';
 
 @Injectable()
 export class NgPeerClientService {
   socket: SocketIOClient.Socket
 
   pc: PeerConnection
+  media: MediaStream
   peers = new Map<string, PeerConnection>([])
 
   constructor(
     @Inject(NGPEER_CONFIG)
-    private ngPeerConfig: NgPeerConfig
+    private ngPeerConfig: NgPeerConfig,
+    private ngPeerClientStore: NgPeerClientStoreService
   ) {
 
     const { socket, rtc } = this.ngPeerConfig
 
     this.pc = new PeerConnection(rtc)
-    this.socket = io(socket.uri);
+    this.socket = SocketClient(socket.uri);
 
     this.socket.on(PeerAction.Connected, ({ id }) => this.makeOffer(id, rtc))
 
@@ -70,6 +74,18 @@ export class NgPeerClientService {
   private async handleAnswer(peer: PeerConnection, sdp: RTCSessionDescriptionInit) {
     const description = new RTCSessionDescription(sdp)
     await peer.setRemoteDescription(description)
+  }
+
+  public async connectToRoom() {
+    const stream = await getUserMedia()
+    this.media = stream
+    this.socket.emit(PeerAction.ConnectToRoom)
+
+    const client = new PeerClient({
+      id: this.socket.id,
+      stream: stream
+    })
+    this.ngPeerClientStore.addClient(client)
   }
 
   getPeer(id: string, rtc?: RTCConfiguration) {

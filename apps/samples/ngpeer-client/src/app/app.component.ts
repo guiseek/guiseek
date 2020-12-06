@@ -25,18 +25,5 @@ export class AppComponent implements OnInit {
     // this.pc.createOffer()
     console.log(this.pc.id);
 
-    // const socket = io('http://localhost:3000');
-    // socket.on('connect', () => {
-    //   console.log('Connected');
-    //   socket.send(
-    //     JSON.stringify({
-    //       event: 'events',
-    //       data: 'test',
-    //     }),
-    //   )})
-    //   socket.on('message', (data) => {
-    //     console.log('Connected');
-    //     console.log(data);
-    //   });
   }
 }
