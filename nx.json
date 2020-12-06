@@ -25,6 +25,12 @@
   "projects": {
     "ngpeer-core": {
       "tags": ["side:common", "type:util"]
+    },
+    "samples-ngpeer-server": {
+      "tags": ["side:server", "type:app"]
+    },
+    "ngpeer-server": {
+      "tags": ["side:server"]
     }
   }
 }

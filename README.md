@@ -45,14 +45,14 @@ Linguagens e ferramentas que uso ou já usei no dia-a-dia.
 - apps
   - samples
     - [ ] ngpeer-client
-    - [ ] ngpeer-server
+    - [-] ngpeer-server
   - content
     - [ ] blog-dektop
     - [ ] blog-mobile
 
 - libs
   - ngpeer
-    - [ ] core
+    - [x] core
     - [ ] client
     - [ ] server
   - blog
