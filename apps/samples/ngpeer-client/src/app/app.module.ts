@@ -11,7 +11,7 @@ import { RouterModule } from '@angular/router'
   imports: [
     BrowserModule,
     NgPeerClientModule.forRoot(),
-    RouterModule.forRoot([], { initialNavigation: 'enabled' }),
+    RouterModule.forRoot([], { initialNavigation: 'enabled', relativeLinkResolution: 'legacy' }),
   ],
   providers: [],
   bootstrap: [AppComponent],
