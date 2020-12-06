@@ -1,98 +1,68 @@
-# Guiseek
+## Iaee 👋 👨
 
-This project was generated using [Nx](https://nx.dev).
+### tranquilo? que legal que chegou até aqui 😃
+Prazer, me chamo Guilherme mas pode chamar de gui, seek ou ainda guiseek, heheh.
 
-<p align="center"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
+Sou engenheiro web com 14 ~ 15 anos de experiência profissional, agora atuando como Tech Lead front-end no Itaú Unibanco e está sendo uma experiência incrível!
 
-🔎 **Nx is a set of Extensible Dev Tools for Monorepos.**
+Já trabalhei como full-stack boa parte da carreira, nos últimos anos estive mais focado em arquitetura front-end. Gosto muito de avaliar e aprender novas tecnologias com potencial.
 
-## Quick Start & Documentation
+## Assuntos que venho estudando
+- Comunicação web p2p com WebRTC e Sockets
+- Monorepo com NX Workspaces
+- Arquitetura limpa em monorepo
 
-[Nx Documentation](https://nx.dev/angular)
+---
 
-[10-minute video showing all Nx features](https://nx.dev/angular/getting-started/what-is-nx)
+## Redes sociais
 
-[Interactive Tutorial](https://nx.dev/angular/tutorial/01-create-application)
+![Twitter Follow](https://img.shields.io/twitter/follow/guiseek?label=GuiSeek&logo=twitter&style=flat-square)
+[![Linkedin: guilherme-siquinelli-2012a668](https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/guilherme-siquinelli-2012a668/)](https://www.linkedin.com/in/guilherme-siquinelli-2012a668/)
 
-## Adding capabilities to your workspace
+---
 
-Nx supports many plugins which add capabilities for developing different types of applications and different tools.
+## ⚡ Tecnologias
 
-These capabilities include generating applications, libraries, etc as well as the devtools to test, and build projects as well.
+Linguagens e ferramentas que uso ou já usei no dia-a-dia.
 
-Below are our core plugins:
+|  |  |  | |  |  |  |  |  
+| - | - | - | - | - | - | - | - | 
+| ![Angular](https://img.shields.io/badge/-Angular-DD0031?style=flat-square&logo=angular) | ![TypeScript](https://img.shields.io/badge/-TypeScript-007ACC?style=flat-square&logo=typescript) | ![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=javascript) | ![Ionic](https://img.shields.io/badge/-Ionic-3880FF?style=flat-square&logo=ionic&logoColor=white) | ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) | ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3) | ![Sass](https://img.shields.io/badge/-Sass-CC6699?style=flat-square&logo=sass&logoColor=white) | ![Angular Material](https://img.shields.io/badge/Material-Design-%23ffa726?style=flat-square&logo=angular) | ![Bootstrap](https://img.shields.io/badge/-Bootstrap-563D7C?style=flat-square&logo=bootstrap)
+| ![NestJS](https://img.shields.io/badge/-NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white) | ![Nodejs](https://img.shields.io/badge/-Nodejs-339933?style=flat-square&logo=Node.js&logoColor=white) | ![MongoDB](https://img.shields.io/badge/-MongoDB-black?style=flat-square&logo=mongodb) | ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=white) | ![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+| ![Git](https://img.shields.io/badge/-Git-black?style=flat-square&logo=git) | ![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github) | ![GitLab](https://img.shields.io/badge/-GitLab-181717?style=flat-square&logo=gitlab) | ![BitBucket](https://img.shields.io/badge/-BitBucket-darkblue?style=flat-square&logo=bitbucket)
+| ![JIRA](https://img.shields.io/badge/-JIRA-0052CC?style=flat-square&logo=jira) | ![VSCode](https://img.shields.io/badge/-VSCode-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)
+---
 
-- [Angular](https://angular.io)
-  - `ng add @nrwl/angular`
-- [React](https://reactjs.org)
-  - `ng add @nrwl/react`
-- Web (no framework frontends)
-  - `ng add @nrwl/web`
-- [Nest](https://nestjs.com)
-  - `ng add @nrwl/nest`
-- [Express](https://expressjs.com)
-  - `ng add @nrwl/express`
-- [Node](https://nodejs.org)
-  - `ng add @nrwl/node`
+![Visualizações](https://komarev.com/ghpvc/?username=guiseek)
 
-There are also many [community plugins](https://nx.dev/nx-community) you could add.
+---
+### Meus estudos recentes estarão neste repositório principal
 
-## Generate an application
 
-Run `ng g @nrwl/angular:app my-app` to generate an application.
 
-> You can use any of the plugins above to generate applications as well.
+`/* @todo */`
 
-When using Nx, you can create multiple applications and libraries in the same workspace.
+- apps
+  - samples
+    - [ ] ngpeer-client
+    - [ ] ngpeer-server
+  - content
+    - [ ] blog-dektop
+    - [ ] blog-mobile
 
-## Generate a library
+- libs
+  - ngpeer
+    - [ ] core
+    - [ ] client
+    - [ ] server
+  - blog
+    - [ ] assets
+    - [ ] domain
+    - [ ] feature
 
-Run `ng g @nrwl/angular:lib my-lib` to generate a library.
-
-> You can also use any of the plugins above to generate libraries as well.
-
-Libraries are sharable across libraries and applications. They can be imported from `@guiseek/mylib`.
-
-## Development server
-
-Run `ng serve my-app` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng g component my-component --project=my-app` to generate a new component.
-
-## Build
-
-Run `ng build my-app` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test my-app` to execute the unit tests via [Jest](https://jestjs.io).
-
-Run `nx affected:test` to execute the unit tests affected by a change.
-
-## Running end-to-end tests
-
-Run `ng e2e my-app` to execute the end-to-end tests via [Cypress](https://www.cypress.io).
-
-Run `nx affected:e2e` to execute the end-to-end tests affected by a change.
-
-## Understand your workspace
-
-Run `nx dep-graph` to see a diagram of the dependencies of your projects.
-
-## Further help
-
-Visit the [Nx Documentation](https://nx.dev/angular) to learn more.
-
-## ☁ Nx Cloud
-
-### Computation Memoization in the Cloud
-
-<p align="center"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-cloud-card.png"></p>
-
-Nx Cloud pairs with Nx in order to enable you to build and test code more rapidly, by up to 10 times. Even teams that are new to Nx can connect to Nx Cloud and start saving time instantly.
-
-Teams using Nx gain the advantage of building full-stack applications with their preferred framework alongside Nx’s advanced code generation and project dependency graph, plus a unified experience for both frontend and backend developers.
-
-Visit [Nx Cloud](https://nx.app/) to learn more.
+>## *Tips*
+> 
+> 1. Link do repositório [guiseek/guiseek](https://github.com/guiseek/guiseek)
+> 1. Saiba mais sobre [como começar](CONTRIBUTING.md)
+>
+>&nbsp;
