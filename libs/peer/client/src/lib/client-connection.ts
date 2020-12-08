@@ -1,5 +1,4 @@
 import { BehaviorSubject } from 'rxjs';
-import { distinctUntilChanged } from 'rxjs/operators';
 import {
   Logger,
   PeerEvent,
@@ -34,8 +33,7 @@ export class ClientConnection {
 
     this.logger.info(socket)
 
-    this.socket = io.connect(config.socket.uri)
-    // this.socket = io(socket.uri, socket)
+    this.socket = io.connect(socket.uri)
 
     this.socket.on('connect', () => {
       this.logger.log('Socket connected. I am', this.socket.id)

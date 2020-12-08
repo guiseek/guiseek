@@ -1,0 +1,17 @@
+<mat-toolbar color="primary">
+  <img src="assets/images/beta.svg" alt="@x-peer beta">
+  <span>@x-peer</span>
+  <span class="spacer"></span>
+  <button
+    type="button"
+    mat-raised-button
+    [disabled]="(active$ | async)"
+    (click)="connectToRoom()"
+  >
+    Participar
+  </button>
+</mat-toolbar>
+
+<main>
+  <router-outlet></router-outlet>
+</main>

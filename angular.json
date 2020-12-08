@@ -10,9 +10,7 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "libs/ngpeer/core/**/*.ts"
-            ]
+            "lintFilePatterns": ["libs/ngpeer/core/**/*.ts"]
           }
         },
         "test": {
@@ -29,9 +27,7 @@
             "tsConfig": "libs/ngpeer/core/tsconfig.lib.json",
             "packageJson": "libs/ngpeer/core/package.json",
             "main": "libs/ngpeer/core/src/index.ts",
-            "assets": [
-              "libs/ngpeer/core/*.md"
-            ]
+            "assets": ["libs/ngpeer/core/*.md"]
           }
         }
       }
@@ -49,9 +45,7 @@
             "outputPath": "dist/apps/samples/ngpeer-server",
             "main": "apps/samples/ngpeer-server/src/main.ts",
             "tsConfig": "apps/samples/ngpeer-server/tsconfig.app.json",
-            "assets": [
-              "apps/samples/ngpeer-server/src/assets"
-            ]
+            "assets": ["apps/samples/ngpeer-server/src/assets"]
           },
           "configurations": {
             "production": {
@@ -76,9 +70,7 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/samples/ngpeer-server/**/*.ts"
-            ]
+            "lintFilePatterns": ["apps/samples/ngpeer-server/**/*.ts"]
           }
         },
         "test": {
@@ -99,9 +91,7 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "libs/ngpeer/server/**/*.ts"
-            ]
+            "lintFilePatterns": ["libs/ngpeer/server/**/*.ts"]
           }
         },
         "test": {
@@ -118,9 +108,7 @@
             "tsConfig": "libs/ngpeer/server/tsconfig.lib.json",
             "packageJson": "libs/ngpeer/server/package.json",
             "main": "libs/ngpeer/server/src/index.ts",
-            "assets": [
-              "libs/ngpeer/server/*.md"
-            ]
+            "assets": ["libs/ngpeer/server/*.md"]
           }
         }
       }
@@ -146,9 +134,7 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "libs/ngpeer/client/src/**/*.ts"
-            ]
+            "lintFilePatterns": ["libs/ngpeer/client/src/**/*.ts"]
           }
         },
         "test": {
@@ -189,12 +175,8 @@
               "apps/samples/ngpeer-client/src/favicon.ico",
               "apps/samples/ngpeer-client/src/assets"
             ],
-            "styles": [
-              "apps/samples/ngpeer-client/src/styles.scss"
-            ],
-            "allowedCommonJsDependencies": [
-              "socket.io-client"
-            ],
+            "styles": ["apps/samples/ngpeer-client/src/styles.scss"],
+            "allowedCommonJsDependencies": ["socket.io-client"],
             "scripts": []
           },
           "configurations": {
@@ -249,9 +231,7 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/samples/ngpeer-client/src/**/*.ts"
-            ]
+            "lintFilePatterns": ["apps/samples/ngpeer-client/src/**/*.ts"]
           }
         },
         "test": {
@@ -284,9 +264,7 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/samples/ngpeer-client-e2e/**/*.{js,ts}"
-            ]
+            "lintFilePatterns": ["apps/samples/ngpeer-client-e2e/**/*.{js,ts}"]
           }
         }
       }
@@ -300,9 +278,7 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "libs/peer/core/**/*.ts"
-            ]
+            "lintFilePatterns": ["libs/peer/core/**/*.ts"]
           }
         },
         "test": {
@@ -319,9 +295,7 @@
             "tsConfig": "libs/peer/core/tsconfig.lib.json",
             "packageJson": "libs/peer/core/package.json",
             "main": "libs/peer/core/src/index.ts",
-            "assets": [
-              "libs/peer/core/*.md"
-            ]
+            "assets": ["libs/peer/core/*.md"]
           }
         }
       }
@@ -351,10 +325,7 @@
               "libs/peer/client/tsconfig.lib.json",
               "libs/peer/client/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/peer/client/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/peer/client/**/*"]
           }
         },
         "test": {
@@ -368,6 +339,129 @@
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
+        }
+      }
+    },
+    "sample-peer": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "apps/sample/peer",
+      "sourceRoot": "apps/sample/peer/src",
+      "prefix": "sample-peer",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/apps/sample/peer",
+            "index": "apps/sample/peer/src/index.html",
+            "main": "apps/sample/peer/src/main.ts",
+            "polyfills": "apps/sample/peer/src/polyfills.ts",
+            "tsConfig": "apps/sample/peer/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "apps/sample/peer/src/favicon.ico",
+              "apps/sample/peer/src/assets"
+            ],
+            "styles": ["apps/sample/peer/src/styles.scss"],
+            "allowedCommonJsDependencies": ["socket.io-client"],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/sample/peer/src/environments/environment.ts",
+                  "with": "apps/sample/peer/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "sample-peer:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "sample-peer:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "sample-peer:build"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "apps/sample/peer/tsconfig.app.json",
+              "apps/sample/peer/tsconfig.spec.json",
+              "apps/sample/peer/tsconfig.editor.json"
+            ],
+            "exclude": ["**/node_modules/**", "!apps/sample/peer/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/sample/peer/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "sample-peer-e2e": {
+      "root": "apps/sample/peer-e2e",
+      "sourceRoot": "apps/sample/peer-e2e/src",
+      "projectType": "application",
+      "architect": {
+        "e2e": {
+          "builder": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/sample/peer-e2e/cypress.json",
+            "tsConfig": "apps/sample/peer-e2e/tsconfig.e2e.json",
+            "devServerTarget": "sample-peer:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "sample-peer:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["apps/sample/peer-e2e/tsconfig.e2e.json"],
+            "exclude": ["**/node_modules/**", "!apps/sample/peer-e2e/**/*"]
+          }
         }
       }
     }

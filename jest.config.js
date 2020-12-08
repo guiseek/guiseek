@@ -7,5 +7,6 @@ module.exports = {
     '<rootDir>/apps/samples/ngpeer-client',
     '<rootDir>/libs/peer/core',
     '<rootDir>/libs/peer/client',
+    '<rootDir>/apps/sample/peer',
   ],
 }

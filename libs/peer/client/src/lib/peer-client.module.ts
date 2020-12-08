@@ -10,12 +10,12 @@ import { mergeConfig, PeerConfig, PEER_CONFIG } from './config'
 })
 export class PeerClientModule {
   static forRoot(config?: PeerConfig): ModuleWithProviders<PeerClientModule> {
-    const ngPeerConfig = mergeConfig(
+    const peerConfig = mergeConfig(
       config ?? { rtc: {}, media: {}, socket: null }
     )
     return {
       ngModule: PeerClientModule,
-      providers: [{ provide: PEER_CONFIG, useValue: ngPeerConfig }],
+      providers: [{ provide: PEER_CONFIG, useValue: peerConfig }],
     }
   }
 }
