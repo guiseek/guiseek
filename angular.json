@@ -295,7 +295,7 @@
             "tsConfig": "libs/peer/core/tsconfig.lib.json",
             "packageJson": "libs/peer/core/package.json",
             "main": "libs/peer/core/src/index.ts",
-            "assets": ["libs/peer/core/*.md"]
+            "assets": ["libs/peer/core/*.md","libs/peer/core/LICENSE"]
           }
         }
       }
@@ -528,5 +528,5 @@
       "unitTestRunner": "jest"
     }
   },
-  "defaultProject": "samples-ngpeer-server"
+  "defaultProject": "sample-gateway"
 }
