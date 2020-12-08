@@ -41,6 +41,12 @@
     "samples-ngpeer-client-e2e": {
       "tags": [],
       "implicitDependencies": ["samples-ngpeer-client"]
+    },
+    "peer-core": {
+      "tags": ["type:util", "scope:peer"]
+    },
+    "peer-client": {
+      "tags": ["side:client", "type:feature", "scope:peer"]
     }
   }
 }
