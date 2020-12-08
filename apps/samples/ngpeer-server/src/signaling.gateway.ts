@@ -1,5 +1,3 @@
-import { Client, Server, Socket } from 'socket.io'
-import { PeerAction } from '@ngpeer/core'
 import {
   OnGatewayConnection,
   OnGatewayDisconnect,
@@ -7,9 +5,12 @@ import {
   WebSocketGateway,
   WebSocketServer,
 } from '@nestjs/websockets'
+import { Client, Server, Socket } from 'socket.io'
+import { PeerAction } from '@ngpeer/core'
 
 @WebSocketGateway()
-export class SignalingGateway implements OnGatewayConnection, OnGatewayDisconnect {
+export class SignalingGateway
+  implements OnGatewayConnection, OnGatewayDisconnect {
   handleConnection(socket: Socket, ...args: any[]) {
     console.log(`Client ${socket.id} connected`)
     socket.broadcast.emit(PeerAction.Connected, { id: socket.id })
