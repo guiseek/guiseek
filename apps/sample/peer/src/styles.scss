@@ -6,9 +6,6 @@
 
 @include mat-core();
 
-
-@import 'styles/theme';
-
 $sample-peer-primary: mat-palette($mat-blue, 700);
 $sample-peer-accent: mat-palette($mat-pink, A200, A100, A400);
 $sample-peer-warn: mat-palette($mat-red);

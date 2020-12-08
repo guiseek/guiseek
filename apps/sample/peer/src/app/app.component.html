@@ -1,17 +1,16 @@
 <mat-toolbar color="primary">
-  <img src="assets/images/beta.svg" alt="@seek-peer beta">
+  <img src="assets/images/beta.svg" alt="@seek-peer beta" />
   <span>@seek-peer</span>
   <span class="spacer"></span>
   <button
     type="button"
     mat-raised-button
-    [disabled]="(active$ | async)"
+    [disabled]="active$ | async"
     (click)="connectToRoom()"
   >
     Conversar
   </button>
 </mat-toolbar>
-
 <main>
   <router-outlet></router-outlet>
 </main>
