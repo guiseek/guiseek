@@ -47,6 +47,13 @@
     },
     "peer-client": {
       "tags": ["side:client", "type:feature", "scope:peer"]
+    },
+    "sample-peer": {
+      "tags": ["side:client", "type:app", "scope:sample"]
+    },
+    "sample-peer-e2e": {
+      "tags": [],
+      "implicitDependencies": ["sample-peer"]
     }
   }
 }

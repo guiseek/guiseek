@@ -5,9 +5,9 @@ import { configuration } from './rtc-configuration';
 import { mediaConstraints } from './media-constraints';
 
 export interface PeerConfig {
-  rtc: RTCConfiguration
-  media: MediaStreamConstraints
-  socket?: SocketOptions
+  rtc?: RTCConfiguration
+  media?: MediaStreamConstraints
+  socket: SocketOptions
 }
 
 export const PEER_CONFIG = new InjectionToken<PeerConfig>('ngpeer-rtc-configuration')
