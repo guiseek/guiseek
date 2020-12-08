@@ -54,6 +54,9 @@
     "sample-peer-e2e": {
       "tags": [],
       "implicitDependencies": ["sample-peer"]
+    },
+    "sample-gateway": {
+      "tags": ["side:server", "type:app", "scope:sample"]
     }
   }
 }

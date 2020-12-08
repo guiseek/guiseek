@@ -1,3 +1,4 @@
+import { RoomComponent } from './room/room.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { BrowserModule } from '@angular/platform-browser'
 import { ReactiveFormsModule } from '@angular/forms'
@@ -13,10 +14,12 @@ import { MatSidenavModule } from '@angular/material/sidenav'
 import { PeerClientModule } from '@seek-peer/client';
 
 import { AppComponent } from './app.component'
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+
+const routes: Routes = [{ path: '', component: RoomComponent }]
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, RoomComponent],
   imports: [
     LayoutModule,
     BrowserModule,
@@ -30,7 +33,7 @@ import { RouterModule } from '@angular/router';
         uri: 'http://localhost:3000'
       }
     }),
-    RouterModule.forRoot([], { initialNavigation: 'enabled' }),
+    RouterModule.forRoot(routes, { initialNavigation: 'enabled' }),
     ReactiveFormsModule,
     BrowserAnimationsModule,
   ],

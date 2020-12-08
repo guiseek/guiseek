@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core'
-import { ClientStore } from '@x-peer/client'
-import { PeerClient } from '@x-peer/core'
+import { ClientStore } from '@seek-peer/client'
+import { PeerClient } from '@seek-peer/core'
 
 @Component({
-  selector: 'x-peer-room',
+  selector: 'sample-peer-room',
   templateUrl: './room.component.html',
   styleUrls: ['./room.component.scss'],
 })
