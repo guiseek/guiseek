@@ -12,10 +12,10 @@ export class AppLogger extends Logger {
   }
 
   connected(id: string, total: number) {
-    super.log(`Client connected: ${id} - ${total} connected clients.`)
+    this.log(`${id} - ${total} clients.`, 'ClientConnected')
   }
 
   disconnected(id: string, total: number) {
-    super.log(`Client disconnected: ${id} - ${total} connected clients.`)
+    this.log(`${id} - ${total} clients.`, 'ClientDisconnected')
   }
 }

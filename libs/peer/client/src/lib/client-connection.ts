@@ -17,12 +17,16 @@ import * as io from 'socket.io-client'
 })
 export class ClientConnection {
   private socket: SocketIOClient.Socket
-  private peerConnections: RTCPeerConnection[] = []
-  private myMediaStream: MediaStream = undefined
+
+
   private peerId: string
-  private logger: Logger = new Logger()
+  private peers: RTCPeerConnection[] = []
+
+  private stream: MediaStream
   private active = new BehaviorSubject<boolean>(false);
   public active$ = this.active.asObservable()
+
+  private logger: Logger = new Logger()
 
   constructor(
     @Inject(PEER_CONFIG)
@@ -63,7 +67,7 @@ export class ClientConnection {
     }
     try {
       const stream = await getUserMedia({ video })
-      this.myMediaStream = stream
+      this.stream = stream
       this.socket.emit(PeerEvent.ConnectToRoom)
       const client = new PeerClient({
         id: this.socket.id,
@@ -143,29 +147,37 @@ export class ClientConnection {
   }
 
   private getPeer(id: string): RTCPeerConnection {
-    if (this.peerConnections[id]) {
-      return this.peerConnections[id]
+    if (this.peers[id]) {
+      return this.peers[id]
     }
 
-    const peerConnection = new RTCPeerConnection()
-    this.peerConnections[id] = peerConnection
+    const peer = new RTCPeerConnection()
+    this.peers[id] = peer
 
-    peerConnection.addEventListener(
+    peer.addEventListener(
       'icecandidate',
       ({ candidate }: RTCPeerConnectionIceEvent) => {
-        const message = PeerTransport.candidate(this.peerId, id, candidate)
-        this.socket.emit(PeerEvent.Message, message)
+        if (candidate) {
+          const message = PeerTransport.candidate(this.peerId, id, candidate)
+          this.socket.emit(PeerEvent.Message, message)
+        }
       }
     )
 
-    peerConnection.addEventListener('onnegotiationneeded', () => {
+    peer.addEventListener('iceconnectionstatechange', (ev) => {
+      if (peer.iceConnectionState === 'failed') {
+        console.log('peer.restartIce()');
+
+      }
+    })
+    peer.addEventListener('onnegotiationneeded', () => {
       this.logger.log('Need negotiation:', id)
     })
 
-    peerConnection.addEventListener('onsignalingstatechange', () => {
+    peer.addEventListener('onsignalingstatechange', () => {
       this.logger.log(
         'ICE signaling state changed to:',
-        peerConnection.signalingState,
+        peer.signalingState,
         'for client',
         id
       )
@@ -176,25 +188,25 @@ export class ClientConnection {
     if (window.navigator.userAgent.toLowerCase().indexOf('chrome') > -1) {
       // Chrome
       // DEPECRATED https://developer.mozilla.org/de/docs/Web/API/RTCPeerConnection/addStream
-      ;(peerConnection as any).addStream(this.myMediaStream)
-      ;(peerConnection as any).onaddstream = ({ stream }) => {
+      ;(peer as any).addStream(this.stream)
+      ;(peer as any).onaddstream = ({ stream }) => {
         this.logger.log('Received new stream')
         const client = new PeerClient({ id: id, stream: stream })
         this.clientStore.addClient(client)
       }
     } else {
       // Firefox
-      peerConnection.addTrack(
-        this.myMediaStream.getVideoTracks()[0],
-        this.myMediaStream
+      peer.addTrack(
+        this.stream.getVideoTracks()[0],
+        this.stream
       )
-      peerConnection.ontrack = ({ streams }: RTCTrackEvent) => {
+      peer.ontrack = ({ streams }: RTCTrackEvent) => {
         this.logger.log('Received new stream')
         const client = new PeerClient({ id: id, stream: streams[0] })
         this.clientStore.addClient(client)
       }
     }
 
-    return peerConnection
+    return peer
   }
 }

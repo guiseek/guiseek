@@ -43,30 +43,26 @@ Linguagens e ferramentas que uso ou já usei no dia-a-dia.
 ### Meus estudos recentes estarão neste repositório principal
 
 
-
-`/* @todo */`
-
+###  `/* @todo */`
 - apps
-  - samples
-    - [x] ngpeer-client
-    - [x] ngpeer-server
-  - content
-    - [ ] blog-dektop
-    - [ ] blog-mobile
+  - sample
+    - [x] peer
+    - [x] gateway
+  - blog
+    - [ ] mobile first
+    - [ ] webapp (pwa)
 
 - libs
-  - ngpeer
+  - peer
     - [x] core
     - [x] client
-    - [x] server
+    - [ ] player
   - blog
+    - [ ] article
+    - [ ] core
     - [ ] assets
-    - [ ] domain
-    - [ ] feature
 
->## *Tips*
-> 
-> 1. Link do repositório [guiseek/guiseek](https://github.com/guiseek/guiseek)
-> 1. Saiba mais sobre [como começar](CONTRIBUTING.md)
->
->&nbsp;
+### `/* @tips */`
+ 
+1. Link do repositório [guiseek/guiseek](https://github.com/guiseek/guiseek)
+1. Saiba mais sobre [como começar](CONTRIBUTING.md)

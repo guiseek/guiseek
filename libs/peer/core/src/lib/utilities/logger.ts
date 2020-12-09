@@ -1,14 +1,22 @@
 export class Logger {
   info(...msg: any) {
-    console.log(`%c${JSON.stringify(msg)}`, 'color: #448AFF')
+    console.log(`%c Info ${new Date()}`, 'color: #448AFF');
+    console.log(msg);
+    console.log('---------------------------------------');
   }
   log(...msg: any) {
-    console.log(`%c${msg}%c`, 'color: #448AFF')
+    console.log(`%c Log ${new Date()}`, 'color: #448AFF');
+    console.log(msg);
+    console.log('---------------------------------------');
   }
   error(...msg: any) {
-    console.error(`%c${msg}%c`, 'color: #F2FA8C')
+    console.log(`%c Error ${new Date()}`, 'color: #F2FA8C');
+    console.log(msg);
+    console.log('---------------------------------------');
   }
   warn(...msg: any) {
-    console.warn(`%c${msg}%c`, 'color: #E66B6E')
+    console.log(`%c Warn ${new Date()}`, 'color: #E66B6E');
+    console.log(msg);
+    console.log('---------------------------------------');
   }
 }

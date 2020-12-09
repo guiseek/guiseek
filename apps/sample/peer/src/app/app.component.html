@@ -1,6 +1,11 @@
 <mat-toolbar color="primary">
   <img src="assets/images/beta.svg" alt="@seek-peer beta" />
-  <span>@seek-peer</span>
+  <span>SeekPeer</span>
+  <span class="spacer"></span>
+
+  <button type="button" mat-button routerLink="/demo">Demo</button>
+  <button type="button" mat-button routerLink="/">Chat</button>
+
   <span class="spacer"></span>
   <button
     type="button"
@@ -8,9 +13,10 @@
     [disabled]="active$ | async"
     (click)="connectToRoom()"
   >
-    Conversar
+    Acessar câmera
   </button>
 </mat-toolbar>
 <main>
   <router-outlet></router-outlet>
 </main>
+<footer></footer>
