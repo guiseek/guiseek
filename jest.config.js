@@ -10,5 +10,6 @@ module.exports = {
     '<rootDir>/apps/sample/peer',
     '<rootDir>/apps/sample/gateway',
     '<rootDir>/libs/peer/player',
+    '<rootDir>/libs/peer/gateway',
   ],
 }

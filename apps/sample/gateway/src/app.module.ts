@@ -1,10 +1,12 @@
 import { Module } from '@nestjs/common'
 import { AppLogger } from './app.logger'
 import { AppController } from './app.controller'
-import { PeerGateway } from './peer.gateway'
+import { PeerGatewayModule } from '@seek-peer/gateway';
+// import { PeerGateway } from './peer.gateway'
 
 @Module({
-  providers: [AppLogger, PeerGateway],
+  imports: [PeerGatewayModule],
+  providers: [AppLogger],
   controllers: [AppController],
 })
 export class AppModule {}

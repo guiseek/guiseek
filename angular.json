@@ -1,274 +1,6 @@
 {
   "version": 1,
   "projects": {
-    "ngpeer-core": {
-      "root": "libs/ngpeer/core",
-      "sourceRoot": "libs/ngpeer/core/src",
-      "projectType": "library",
-      "schematics": {},
-      "architect": {
-        "lint": {
-          "builder": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": ["libs/ngpeer/core/**/*.ts"]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "options": {
-            "jestConfig": "libs/ngpeer/core/jest.config.js",
-            "passWithNoTests": true
-          }
-        },
-        "build": {
-          "builder": "@nrwl/node:package",
-          "options": {
-            "outputPath": "dist/libs/ngpeer/core",
-            "tsConfig": "libs/ngpeer/core/tsconfig.lib.json",
-            "packageJson": "libs/ngpeer/core/package.json",
-            "main": "libs/ngpeer/core/src/index.ts",
-            "assets": ["libs/ngpeer/core/*.md"]
-          }
-        }
-      }
-    },
-    "samples-ngpeer-server": {
-      "root": "apps/samples/ngpeer-server",
-      "sourceRoot": "apps/samples/ngpeer-server/src",
-      "projectType": "application",
-      "prefix": "samples-ngpeer-server",
-      "schematics": {},
-      "architect": {
-        "build": {
-          "builder": "@nrwl/node:build",
-          "options": {
-            "outputPath": "dist/apps/samples/ngpeer-server",
-            "main": "apps/samples/ngpeer-server/src/main.ts",
-            "tsConfig": "apps/samples/ngpeer-server/tsconfig.app.json",
-            "assets": ["apps/samples/ngpeer-server/src/assets"]
-          },
-          "configurations": {
-            "production": {
-              "optimization": true,
-              "extractLicenses": true,
-              "inspect": false,
-              "fileReplacements": [
-                {
-                  "replace": "apps/samples/ngpeer-server/src/environments/environment.ts",
-                  "with": "apps/samples/ngpeer-server/src/environments/environment.prod.ts"
-                }
-              ]
-            }
-          }
-        },
-        "serve": {
-          "builder": "@nrwl/node:execute",
-          "options": {
-            "buildTarget": "samples-ngpeer-server:build"
-          }
-        },
-        "lint": {
-          "builder": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": ["apps/samples/ngpeer-server/**/*.ts"]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "options": {
-            "jestConfig": "apps/samples/ngpeer-server/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
-    "ngpeer-server": {
-      "root": "libs/ngpeer/server",
-      "sourceRoot": "libs/ngpeer/server/src",
-      "projectType": "library",
-      "schematics": {},
-      "architect": {
-        "lint": {
-          "builder": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": ["libs/ngpeer/server/**/*.ts"]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "options": {
-            "jestConfig": "libs/ngpeer/server/jest.config.js",
-            "passWithNoTests": true
-          }
-        },
-        "build": {
-          "builder": "@nrwl/node:package",
-          "options": {
-            "outputPath": "dist/libs/ngpeer/server",
-            "tsConfig": "libs/ngpeer/server/tsconfig.lib.json",
-            "packageJson": "libs/ngpeer/server/package.json",
-            "main": "libs/ngpeer/server/src/index.ts",
-            "assets": ["libs/ngpeer/server/*.md"]
-          }
-        }
-      }
-    },
-    "ngpeer-client": {
-      "projectType": "library",
-      "root": "libs/ngpeer/client",
-      "sourceRoot": "libs/ngpeer/client/src",
-      "prefix": "ngpeer",
-      "architect": {
-        "build": {
-          "builder": "@nrwl/angular:package",
-          "options": {
-            "tsConfig": "libs/ngpeer/client/tsconfig.lib.json",
-            "project": "libs/ngpeer/client/ng-package.json"
-          },
-          "configurations": {
-            "production": {
-              "tsConfig": "libs/ngpeer/client/tsconfig.lib.prod.json"
-            }
-          }
-        },
-        "lint": {
-          "builder": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": ["libs/ngpeer/client/src/**/*.ts"]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "options": {
-            "jestConfig": "libs/ngpeer/client/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      },
-      "schematics": {
-        "@schematics/angular:component": {
-          "style": "scss"
-        }
-      }
-    },
-    "samples-ngpeer-client": {
-      "projectType": "application",
-      "schematics": {
-        "@schematics/angular:component": {
-          "style": "scss"
-        }
-      },
-      "root": "apps/samples/ngpeer-client",
-      "sourceRoot": "apps/samples/ngpeer-client/src",
-      "prefix": "ngpeer",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-angular:browser",
-          "options": {
-            "outputPath": "dist/apps/samples/ngpeer-client",
-            "index": "apps/samples/ngpeer-client/src/index.html",
-            "main": "apps/samples/ngpeer-client/src/main.ts",
-            "polyfills": "apps/samples/ngpeer-client/src/polyfills.ts",
-            "tsConfig": "apps/samples/ngpeer-client/tsconfig.app.json",
-            "aot": true,
-            "assets": [
-              "apps/samples/ngpeer-client/src/favicon.ico",
-              "apps/samples/ngpeer-client/src/assets"
-            ],
-            "styles": ["apps/samples/ngpeer-client/src/styles.scss"],
-            "allowedCommonJsDependencies": ["socket.io-client"],
-            "scripts": []
-          },
-          "configurations": {
-            "production": {
-              "fileReplacements": [
-                {
-                  "replace": "apps/samples/ngpeer-client/src/environments/environment.ts",
-                  "with": "apps/samples/ngpeer-client/src/environments/environment.prod.ts"
-                }
-              ],
-              "optimization": true,
-              "outputHashing": "all",
-              "sourceMap": false,
-              "extractCss": true,
-              "namedChunks": false,
-              "extractLicenses": true,
-              "vendorChunk": false,
-              "buildOptimizer": true,
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "6kb",
-                  "maximumError": "10kb"
-                }
-              ]
-            }
-          }
-        },
-        "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
-          "options": {
-            "browserTarget": "samples-ngpeer-client:build",
-            "proxyConfig": "apps/samples/ngpeer-client/proxy.conf.json"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "samples-ngpeer-client:build:production"
-            }
-          }
-        },
-        "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
-          "options": {
-            "browserTarget": "samples-ngpeer-client:build"
-          }
-        },
-        "lint": {
-          "builder": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": ["apps/samples/ngpeer-client/src/**/*.ts"]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "options": {
-            "jestConfig": "apps/samples/ngpeer-client/jest.config.js",
-            "passWithNoTests": true
-          }
-        }
-      }
-    },
-    "samples-ngpeer-client-e2e": {
-      "root": "apps/samples/ngpeer-client-e2e",
-      "sourceRoot": "apps/samples/ngpeer-client-e2e/src",
-      "projectType": "application",
-      "architect": {
-        "e2e": {
-          "builder": "@nrwl/cypress:cypress",
-          "options": {
-            "cypressConfig": "apps/samples/ngpeer-client-e2e/cypress.json",
-            "tsConfig": "apps/samples/ngpeer-client-e2e/tsconfig.e2e.json",
-            "devServerTarget": "samples-ngpeer-client:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "samples-ngpeer-client:serve:production"
-            }
-          }
-        },
-        "lint": {
-          "builder": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": ["apps/samples/ngpeer-client-e2e/**/*.{js,ts}"]
-          }
-        }
-      }
-    },
     "peer-core": {
       "root": "libs/peer/core",
       "sourceRoot": "libs/peer/core/src",
@@ -556,6 +288,37 @@
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
+        }
+      }
+    },
+    "peer-gateway": {
+      "root": "libs/peer/gateway",
+      "sourceRoot": "libs/peer/gateway/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/peer/gateway/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/peer/gateway/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/peer/gateway",
+            "tsConfig": "libs/peer/gateway/tsconfig.lib.json",
+            "packageJson": "libs/peer/gateway/package.json",
+            "main": "libs/peer/gateway/src/index.ts",
+            "assets": ["libs/peer/gateway/*.md"]
+          }
         }
       }
     }
