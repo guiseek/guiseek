@@ -23,25 +23,6 @@
     }
   },
   "projects": {
-    "ngpeer-core": {
-      "tags": ["side:common", "type:util"]
-    },
-    "samples-ngpeer-server": {
-      "tags": ["side:server", "type:app"]
-    },
-    "ngpeer-server": {
-      "tags": ["side:server"]
-    },
-    "ngpeer-client": {
-      "tags": ["side:client", "type:feature"]
-    },
-    "samples-ngpeer-client": {
-      "tags": ["side:client", "type:app"]
-    },
-    "samples-ngpeer-client-e2e": {
-      "tags": [],
-      "implicitDependencies": ["samples-ngpeer-client"]
-    },
     "peer-core": {
       "tags": ["type:util", "scope:peer"]
     },
@@ -60,6 +41,9 @@
     },
     "peer-player": {
       "tags": ["side:client", "type:feature", "scope:peer"]
+    },
+    "peer-gateway": {
+      "tags": ["side:server", "type:feature", "scope:peer"]
     }
   }
 }

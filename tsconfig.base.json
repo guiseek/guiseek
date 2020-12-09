@@ -16,12 +16,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@ngpeer/core": ["libs/ngpeer/core/src/index.ts"],
-      "@ngpeer/server": ["libs/ngpeer/server/src/index.ts"],
-      "@ngpeer/client": ["libs/ngpeer/client/src/index.ts"],
       "@seek-peer/core": ["libs/peer/core/src/index.ts"],
       "@seek-peer/client": ["libs/peer/client/src/index.ts"],
-      "@seek-peer/player": ["libs/peer/player/src/index.ts"]
+      "@seek-peer/player": ["libs/peer/player/src/index.ts"],
+      "@seek-peer/gateway": ["libs/peer/gateway/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

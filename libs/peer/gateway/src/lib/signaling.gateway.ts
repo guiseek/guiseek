@@ -1,19 +1,18 @@
 import {
-  MessageBody,
-  ConnectedSocket,
+  OnGatewayConnection,
+  OnGatewayDisconnect,
   SubscribeMessage,
   WebSocketGateway,
   WebSocketServer,
-  OnGatewayConnection,
-  OnGatewayDisconnect,
 } from '@nestjs/websockets'
-import { Client, Server, Socket } from 'socket.io'
-import { PeerEvent } from '@seek-peer/core'
-import { AppLogger } from './app.logger'
+import { PeerEvent, IPeerTransport } from '@seek-peer/core'
+import { PeerGatewayLogger } from './peer-gateway.logger'
+import { Server, Socket, Client } from 'socket.io'
 
 @WebSocketGateway()
-export class PeerGateway implements OnGatewayConnection, OnGatewayDisconnect {
-  private logger: AppLogger = new AppLogger('SeekPeerGateway')
+export class SignalingGateway
+  implements OnGatewayConnection, OnGatewayDisconnect {
+  private logger: PeerGatewayLogger = new PeerGatewayLogger()
 
   sockets = new Map<string, Client>([])
 
@@ -21,7 +20,7 @@ export class PeerGateway implements OnGatewayConnection, OnGatewayDisconnect {
   server: Server
 
   @SubscribeMessage(PeerEvent.Message)
-  onPeerMessage(socket: Socket, data: any) {
+  onPeerMessage(socket: Socket, data: IPeerTransport) {
     this.logger.log(JSON.stringify(data), 'Forward WebRTC peer message')
     socket.broadcast.emit(PeerEvent.Message, data)
   }
