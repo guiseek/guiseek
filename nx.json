@@ -57,6 +57,9 @@
     },
     "sample-gateway": {
       "tags": ["side:server", "type:app", "scope:sample"]
+    },
+    "peer-player": {
+      "tags": ["side:client", "type:feature", "scope:peer"]
     }
   }
 }

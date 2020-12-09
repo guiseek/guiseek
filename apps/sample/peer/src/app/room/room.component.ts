@@ -1,24 +1,18 @@
-import { Component, OnInit } from '@angular/core'
+import { catchError, map } from 'rxjs/operators'
 import { ClientStore } from '@seek-peer/client'
-import { PeerClient } from '@seek-peer/core'
+import { Component } from '@angular/core'
+import { throwError } from 'rxjs'
 
 @Component({
   selector: 'sample-peer-room',
   templateUrl: './room.component.html',
   styleUrls: ['./room.component.scss'],
 })
-export class RoomComponent implements OnInit {
-  public peerClients: PeerClient[]
-  private blobs: string[] = []
+export class RoomComponent {
+  public peers$ = this.clientStoreService.clients$.pipe(
+    map((clientList) => clientList.toArray()),
+    catchError((err) => throwError('E:', err))
+  )
 
-  constructor(private clientStoreService: ClientStore) {
-    this.clientStoreService.clients$.subscribe(
-      (clientList) => (this.peerClients = clientList.toArray()),
-      (err) => console.error('Error updating the client list:', err)
-    )
-  }
-
-  ngOnInit() {
-    // this.connectionService.connectToRoom()
-  }
+  constructor(private clientStoreService: ClientStore) {}
 }

@@ -11,15 +11,20 @@ import { MatToolbarModule } from '@angular/material/toolbar'
 import { MatGridListModule } from '@angular/material/grid-list'
 import { MatSidenavModule } from '@angular/material/sidenav'
 
+import { PeerPlayerModule } from '@seek-peer/player';
 import { PeerClientModule } from '@seek-peer/client';
 
 import { AppComponent } from './app.component'
 import { RouterModule, Routes } from '@angular/router';
+import { DemoComponent } from './demo/demo.component';
 
-const routes: Routes = [{ path: '', component: RoomComponent }]
+const routes: Routes = [
+  { path: '', component: RoomComponent },
+  { path: 'demo', component: DemoComponent }
+]
 
 @NgModule({
-  declarations: [AppComponent, RoomComponent],
+  declarations: [AppComponent, RoomComponent, DemoComponent],
   imports: [
     LayoutModule,
     BrowserModule,
@@ -28,9 +33,10 @@ const routes: Routes = [{ path: '', component: RoomComponent }]
     MatSidenavModule,
     MatToolbarModule,
     MatGridListModule,
+    PeerPlayerModule,
     PeerClientModule.forRoot({
       socket: {
-        uri: 'http://localhost:3000'
+        uri: 'http://localhost:8080'
       }
     }),
     RouterModule.forRoot(routes, { initialNavigation: 'enabled' }),

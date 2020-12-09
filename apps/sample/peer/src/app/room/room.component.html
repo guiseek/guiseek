@@ -1,5 +1,11 @@
 <mat-grid-list cols="2" rowHeight="2:1">
-  <mat-grid-tile *ngFor="let client of peerClients">
-    <video controls autoplay [muted]="true" [srcObject]="client.stream"></video>
+  <mat-grid-tile *ngFor="let client of peers$ | async">
+    <peer-player
+      [title]="client.id"
+      [autoplay]="true"
+      [srcObject]="client.stream"
+    ></peer-player>
+
+    <!-- <video controls autoplay [muted]="true" [srcObject]="client.stream"></video> -->
   </mat-grid-tile>
 </mat-grid-list>

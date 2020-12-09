@@ -13,7 +13,7 @@ import { AppLogger } from './app.logger'
 
 @WebSocketGateway()
 export class PeerGateway implements OnGatewayConnection, OnGatewayDisconnect {
-  private logger: AppLogger = new AppLogger('SeekPeerGateway')
+  private logger: AppLogger = new AppLogger()
 
   sockets = new Map<string, Client>([])
 
@@ -22,7 +22,7 @@ export class PeerGateway implements OnGatewayConnection, OnGatewayDisconnect {
 
   @SubscribeMessage(PeerEvent.Message)
   onPeerMessage(socket: Socket, data: any) {
-    this.logger.log('Forward WebRTC peer message:', JSON.stringify(data))
+    this.logger.log(JSON.stringify(data), 'Forward WebRTC peer message')
     socket.broadcast.emit(PeerEvent.Message, data)
   }
 
@@ -33,13 +33,11 @@ export class PeerGateway implements OnGatewayConnection, OnGatewayDisconnect {
   }
 
   handleConnection(socket: Socket, ...args: any[]) {
-    this.logger.log('new client: ', socket.id)
+    this.logger.log(socket.id, '')
 
     this.sockets.set(socket.id, socket.client)
 
     this.logger.connected(socket.id, this.sockets.size)
-
-    this.logger.warn(Object.entries(this.sockets).toString())
 
     this.server.emit('joined', JSON.stringify(this.sockets.keys()))
     socket.broadcast.emit('joined', JSON.stringify(this.sockets.keys()))
