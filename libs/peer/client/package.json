@@ -1,7 +1,7 @@
 {
   "name": "@seek-peer/client",
   "version": "0.0.1",
-  "license": "GPLv3",
+  "license": "GNU GPLv3",
   "peerDependencies": {
     "@angular/common": "^10.1.6",
     "@angular/core": "^10.1.6",

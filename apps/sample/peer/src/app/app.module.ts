@@ -19,6 +19,8 @@ import { AppComponent } from './app.component'
 import { RouterModule, Routes } from '@angular/router'
 import { DemoComponent } from './demo/demo.component'
 import { HttpClientModule } from '@angular/common/http'
+import { ServiceWorkerModule } from '@angular/service-worker'
+import { environment } from '../environments/environment'
 
 const routes: Routes = [
   { path: '', component: RoomComponent },
@@ -29,18 +31,15 @@ const routes: Routes = [
   declarations: [AppComponent, RoomComponent, DemoComponent],
   imports: [
     LayoutModule,
-    BrowserModule,
     MatIconModule,
     MatButtonModule,
     MatSidenavModule,
     MatToolbarModule,
     MatGridListModule,
+
     PeerPlayerModule,
-    PeerClientModule.forRoot({
-      socket: {
-        uri: 'http://localhost:8080',
-      },
-    }),
+    PeerClientModule.forRoot(environment.connection),
+
     UtilLoggerModule.forRoot([
       {
         loggerName: 'console',
@@ -51,12 +50,17 @@ const routes: Routes = [
         loggerName: 'localstorage',
         loggerLocation: 'logging',
         isActive: true,
-      }
+      },
     ]),
+
+    BrowserModule,
     HttpClientModule,
-    RouterModule.forRoot(routes, { initialNavigation: 'enabled' }),
     ReactiveFormsModule,
     BrowserAnimationsModule,
+    RouterModule.forRoot(routes, { initialNavigation: 'enabled' }),
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent],
