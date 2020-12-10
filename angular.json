@@ -96,7 +96,8 @@
             "aot": true,
             "assets": [
               "apps/sample/peer/src/favicon.ico",
-              "apps/sample/peer/src/assets"
+              "apps/sample/peer/src/assets",
+              "apps/sample/peer/src/manifest.webmanifest"
             ],
             "styles": ["apps/sample/peer/src/styles.scss"],
             "allowedCommonJsDependencies": ["socket.io-client"],
@@ -130,7 +131,9 @@
                   "maximumWarning": "6kb",
                   "maximumError": "10kb"
                 }
-              ]
+              ],
+              "serviceWorker": true,
+              "ngswConfigPath": "apps/sample/peer/ngsw-config.json"
             }
           }
         },
@@ -317,7 +320,7 @@
             "tsConfig": "libs/peer/gateway/tsconfig.lib.json",
             "packageJson": "libs/peer/gateway/package.json",
             "main": "libs/peer/gateway/src/index.ts",
-            "assets": ["libs/peer/gateway/*.md"]
+            "assets": ["libs/peer/gateway/*.md", "libs/peer/gateway/LICENSE"]
           }
         }
       }
