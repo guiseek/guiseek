@@ -1,5 +1,6 @@
 import { ClientConnection } from '@seek-peer/client'
 import { Component, ElementRef } from '@angular/core'
+import { LogService } from '@seek-peer/util-logger';
 
 @Component({
   selector: 'sample-peer-root',
@@ -12,8 +13,12 @@ export class AppComponent {
 
   constructor(
     private connectionService: ClientConnection,
-    private elementRef: ElementRef<HTMLElement>
-  ) {}
+    private elementRef: ElementRef<HTMLElement>,
+    private logger: LogService
+  ) {
+    this.logger.log('hahaha')
+    this.logger.fatal('eita')
+  }
 
   public connectToRoom() {
     this.connectionService.connectToRoom()

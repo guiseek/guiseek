@@ -11,5 +11,6 @@ module.exports = {
     '<rootDir>/apps/sample/gateway',
     '<rootDir>/libs/peer/player',
     '<rootDir>/libs/peer/gateway',
+    '<rootDir>/libs/util/logger',
   ],
 }
