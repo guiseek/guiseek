@@ -321,6 +321,44 @@
           }
         }
       }
+    },
+    "util-logger": {
+      "projectType": "library",
+      "root": "libs/util/logger",
+      "sourceRoot": "libs/util/logger/src",
+      "prefix": "guiseek",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "options": {
+            "tsConfig": "libs/util/logger/tsconfig.lib.json",
+            "project": "libs/util/logger/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/util/logger/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/util/logger/tsconfig.lib.json",
+              "libs/util/logger/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/util/logger/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/util/logger/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {}
     }
   },
   "cli": {
