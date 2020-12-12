@@ -18,35 +18,68 @@
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e",
+          "compodoc"
+        ]
       }
     }
   },
   "projects": {
     "peer-core": {
-      "tags": ["type:util", "scope:peer"]
+      "tags": [
+        "type:util",
+        "scope:peer"
+      ]
     },
     "peer-client": {
-      "tags": ["side:client", "type:feature", "scope:peer"]
+      "tags": [
+        "side:client",
+        "type:feature",
+        "scope:peer"
+      ]
     },
     "sample-peer": {
-      "tags": ["side:client", "type:app", "scope:sample"]
+      "tags": [
+        "side:client",
+        "type:app",
+        "scope:sample"
+      ]
     },
     "sample-peer-e2e": {
       "tags": [],
-      "implicitDependencies": ["sample-peer"]
+      "implicitDependencies": [
+        "sample-peer"
+      ]
     },
     "sample-gateway": {
-      "tags": ["side:server", "type:app", "scope:sample"]
+      "tags": [
+        "side:server",
+        "type:app",
+        "scope:sample"
+      ]
     },
     "peer-player": {
-      "tags": ["side:client", "type:feature", "scope:peer"]
+      "tags": [
+        "side:client",
+        "type:feature",
+        "scope:peer"
+      ]
     },
     "peer-gateway": {
-      "tags": ["side:server", "type:feature", "scope:peer"]
+      "tags": [
+        "side:server",
+        "type:feature",
+        "scope:peer"
+      ]
     },
     "util-logger": {
-      "tags": ["type:util"]
+      "tags": [
+        "type:util"
+      ]
     }
   }
 }
