@@ -13,7 +13,8 @@ export const environment = {
       ]
     },
     socket: {
-      uri: 'http://localhost:8080'
+      uri: 'https://gateway.guiseek.dev'
+      // uri: 'http://localhost:8080'
     }
   }
 }

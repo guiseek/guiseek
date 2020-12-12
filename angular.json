@@ -88,7 +88,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/apps/sample/peer",
+            "outputPath": "docs",
             "index": "apps/sample/peer/src/index.html",
             "main": "apps/sample/peer/src/main.ts",
             "polyfills": "apps/sample/peer/src/polyfills.ts",
