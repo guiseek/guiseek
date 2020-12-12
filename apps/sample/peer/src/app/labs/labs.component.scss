@@ -1,0 +1,16 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  .mat-drawer-container {
+    flex: 1;
+    display: flex;
+  }
+  .mat-drawer-content,
+  .mat-drawer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+}

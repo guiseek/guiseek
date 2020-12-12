@@ -10,6 +10,9 @@ import { MatButtonModule } from '@angular/material/button'
 import { MatToolbarModule } from '@angular/material/toolbar'
 import { MatGridListModule } from '@angular/material/grid-list'
 import { MatSidenavModule } from '@angular/material/sidenav'
+import { MatDividerModule } from '@angular/material/divider'
+import { MatListModule } from '@angular/material/List'
+import { MatMenuModule } from '@angular/material/menu'
 
 import { UtilLoggerModule } from '@seek-peer/util-logger'
 import { PeerPlayerModule } from '@seek-peer/player'
@@ -25,6 +28,15 @@ import { environment } from '../environments/environment'
 const routes: Routes = [
   { path: '', component: RoomComponent },
   { path: 'demo', component: DemoComponent },
+  {
+    path: 'call',
+    loadChildren: () => import('./call/call.module').then((m) => m.CallModule),
+  },
+  {
+    path: 'labs',
+    loadChildren: () => import('./labs/labs.module').then((m) => m.LabsModule),
+  },
+
 ]
 
 @NgModule({
@@ -36,6 +48,9 @@ const routes: Routes = [
     MatSidenavModule,
     MatToolbarModule,
     MatGridListModule,
+    MatDividerModule,
+    MatListModule,
+    MatMenuModule,
 
     PeerPlayerModule,
     PeerClientModule.forRoot(environment.connection),

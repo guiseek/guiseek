@@ -1,9 +1,33 @@
-<mat-grid-list cols="1" rowHeight="2:1">
-  <mat-grid-tile *ngFor="let client of peers$ | async">
-    <peer-player
-      [title]="client.id"
-      [autoplay]="true"
-      [srcObject]="client.stream"
-    ></peer-player>
-  </mat-grid-tile>
-</mat-grid-list>
+<section id="grid" *ngIf="(clients$ | async)?.length; else startTmpl">
+  <ng-container *ngFor="let client of clients$ | async">
+    <figure>
+      <peer-player
+        title="@SeekPeer"
+        [autoplay]="true"
+        [overlay]="true"
+        [srcObject]="client?.stream"
+      ></peer-player>
+    </figure>
+  </ng-container>
+
+  <!-- <mat-grid-list [cols]="(mobile$ | async) ? 1 : 2" gutterSize="20px" rowHeight="480px" rowHeight="2:1">
+    <mat-grid-tile *ngFor="let client of clients$ | async">
+      <div>
+      <peer-player
+        [title]="client.id"
+        [autoplay]="true"
+        [overlay]="true"
+        [srcObject]="client.stream"
+      ></peer-player>
+
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list> -->
+</section>
+<ng-template #startTmpl>
+  <div class="start">
+    <button class="join-room" (click)="start()">
+      <img src="assets/images/screen.svg" alt="Iniciar chamada de vídeo" />
+    </button>
+  </div>
+</ng-template>

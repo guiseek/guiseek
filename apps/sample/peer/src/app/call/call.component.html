@@ -1,0 +1,81 @@
+<mat-drawer-container class="example-container" [hasBackdrop]="true">
+  <mat-drawer #drawer mode="over">I'm a drawer</mat-drawer>
+  <mat-drawer-content>
+    <div id="video" #video>
+      <figure>
+        <video
+          id="localVideo"
+          [ngClass]="{ connected: pc1?.connectionState === 'connected' }"
+          #localVideo
+          playsinline
+          autoplay
+          muted
+        ></video>
+        <caption id="localCandidateId" #localCandidateId>
+          Not connected.
+        </caption>
+      </figure>
+      <figure>
+        <video
+          id="remoteVideo"
+          [ngClass]="{ connected: pc2?.connectionState === 'connected' }"
+          #remoteVideo
+          playsinline
+          autoplay
+          muted
+        ></video>
+        <caption id="remoteCandidateId" #remoteCandidateId>
+          Not connected.
+        </caption>
+      </figure>
+    </div>
+
+    <mat-toolbar class="footer">
+      <button mat-raised-button (click)="drawer.toggle()">Toggle drawer</button>
+
+      <span class="spacer"></span>
+
+      <pre>{{ pc1?.connectionState | json }}</pre>
+      <pre>{{ pc1?.iceConnectionState | json }}</pre>
+      <pre>{{ pc1?.iceGatheringState | json }}</pre>
+
+      <span class="spacer"></span>
+
+      <button
+        mat-button
+        id="startButton"
+        [disabled]="localStream?.active"
+        (click)="start()"
+      >
+        Start
+      </button>
+      <button
+        id="callButton"
+        mat-button
+        [disabled]="!localStream?.active || pc1?.connectionState == 'connected'"
+        (click)="call()"
+      >
+        Call
+      </button>
+      <button
+        mat-button
+        id="restartButton"
+        [disabled]="
+          pc1?.iceGatheringState === 'gathering' ||
+          pc1?.iceConnectionState !== 'connected'
+        "
+        (click)="restart()"
+      >
+        Restart ICE
+      </button>
+      <button
+        mat-button
+        id="hangupButton"
+        [disabled]="!pc1?.connectionState"
+        (click)="hangup()"
+      >
+        Hang Up
+      </button>
+    </mat-toolbar>
+  </mat-drawer-content>
+</mat-drawer-container>

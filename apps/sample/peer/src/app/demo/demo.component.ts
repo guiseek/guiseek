@@ -1,5 +1,5 @@
 import { getDisplayMedia, getUserMedia } from '@seek-peer/core'
-import { AfterViewInit, Component, ElementRef, Renderer2 } from '@angular/core'
+import { Component, ElementRef, Renderer2 } from '@angular/core'
 import { from } from 'rxjs'
 import { ClientConnection } from '@seek-peer/client'
 
@@ -8,7 +8,7 @@ import { ClientConnection } from '@seek-peer/client'
   templateUrl: './demo.component.html',
   styleUrls: ['./demo.component.scss'],
 })
-export class DemoComponent implements AfterViewInit {
+export class DemoComponent {
   stream$ = from(
     getUserMedia({
       video: {
@@ -28,14 +28,5 @@ export class DemoComponent implements AfterViewInit {
       stream.getVideoTracks().forEach((t) => t.stop())
       const screen = await getDisplayMedia()
     })
-  }
-
-  ngAfterViewInit() {
-    const element = this.elementRef?.nativeElement.parentElement
-    const footer = element.parentNode.parentElement.parentElement
-    footer.querySelector('footer').scrollTo({ behavior: 'smooth' })
-    console.log(footer)
-
-
   }
 }

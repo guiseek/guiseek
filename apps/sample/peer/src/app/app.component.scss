@@ -7,16 +7,24 @@
     min-height: 64px;
     img {
       max-height: 90%;
-      margin: 12px;
+      // margin: 12px;
     }
   }
 
+  .call-button {
+    .mat-icon {
+      color: black;
+      font-size: 32px;
+      width: 32px;
+      height: 32px;
+    }
+  }
   main {
     display: flex;
     flex-direction: column;
     flex: 1;
-    background-image: url(../assets/images/start.svg);
-    background-position: center center;
-    background-repeat: no-repeat;
+    // background-image: url(../assets/images/start.svg);
+    // background-position: center center;
+    // background-repeat: no-repeat;
   }
 }

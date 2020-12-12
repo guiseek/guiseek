@@ -1,1 +1,1 @@
-export * from './lib/peer-player.module'
+export * from './lib'

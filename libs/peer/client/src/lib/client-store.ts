@@ -15,6 +15,11 @@ export class ClientStore {
     return this._clients.asObservable()
   }
 
+  public getClient(clientId: string): PeerClient {
+    const clientList = this._clients.getValue()
+    return clientList.find((c) => c.id === clientId)
+  }
+
   public addClient(newClient: PeerClient): void {
     this._clients.next(this._clients.getValue().push(newClient))
   }
