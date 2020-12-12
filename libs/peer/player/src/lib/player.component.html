@@ -38,6 +38,15 @@
       >
       </peer-play>
 
+      <peer-volume
+        [muted]="muted"
+        [color]="color"
+        [video]="video"
+        (mutedChanged)="muted = $event; mutedChange.emit(muted)"
+        [keyboard]="keyboard"
+      >
+      </peer-volume>
+
       <peer-quality *ngIf="quality" [video]="video"></peer-quality>
 
       <peer-fullscreen

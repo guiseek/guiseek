@@ -1,16 +1,34 @@
 import { NgModule } from '@angular/core'
-import { CommonModule } from '@angular/common';
-import { PlayButton } from './buttons/play.button';
-import { FullscreenButton } from './buttons/fullscreen.button';
-import { MatButtonModule } from '@angular/material/button';
-import { QualityControl } from './controls/quality.control';
+import { MatRippleModule } from '@angular/material/core'
+import { MatSliderModule } from '@angular/material/slider'
+import { CommonModule } from '@angular/common'
+import { PlayButton } from './buttons/play.button'
+import { FullscreenButton } from './buttons/fullscreen.button'
+import { MatButtonModule } from '@angular/material/button'
+import { QualityControl } from './controls/quality.control'
 import { PlayerComponent } from './player.component'
-import { Fullscreen } from './utilities/fullscreen';
+import { Fullscreen } from './utilities/fullscreen'
+import { ScreenComponent } from './posters/screen.component'
+import { VolumeControl } from './controls'
 
 @NgModule({
-  imports: [CommonModule, MatButtonModule],
-  declarations: [PlayButton, FullscreenButton, QualityControl, PlayerComponent],
-  exports: [PlayButton, FullscreenButton, QualityControl, PlayerComponent],
+  imports: [CommonModule, MatButtonModule, MatSliderModule, MatRippleModule],
+  declarations: [
+    PlayButton,
+    VolumeControl,
+    QualityControl,
+    PlayerComponent,
+    ScreenComponent,
+    FullscreenButton,
+  ],
+  exports: [
+    PlayButton,
+    VolumeControl,
+    QualityControl,
+    PlayerComponent,
+    ScreenComponent,
+    FullscreenButton,
+  ],
   providers: [Fullscreen],
 })
 export class PeerPlayerModule {}

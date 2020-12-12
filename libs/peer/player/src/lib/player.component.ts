@@ -9,6 +9,7 @@ import {
   EventEmitter,
   AfterViewInit,
 } from '@angular/core'
+import { ThemePalette } from '@angular/material/core'
 import { IEventHandler, EventHandler } from './utilities/event-handler'
 
 @Component({
@@ -30,7 +31,8 @@ export class PlayerComponent implements AfterViewInit, OnDestroy {
   @Input() quality = true
   @Input() fullscreen = true
 
-  @Input() poster!: string
+  @Input() poster: string
+  @Input() color: ThemePalette = 'primary'
 
   @Input() keyboard = false
   @Input() overlay!: boolean

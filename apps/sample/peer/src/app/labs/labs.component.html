@@ -1,0 +1,12 @@
+<mat-drawer-container class="labs-container" [hasBackdrop]="true">
+  <mat-drawer-content>
+    <router-outlet (activate)="onActivate($event)"></router-outlet>
+
+    <!-- <mat-toolbar>
+      <button mat-raised-button (click)="drawer.toggle()">Toggle drawer</button>
+
+      <span class="spacer"></span>
+    </mat-toolbar> -->
+  </mat-drawer-content>
+  <mat-drawer #drawer position="end" mode="over">I'm a drawer</mat-drawer>
+</mat-drawer-container>

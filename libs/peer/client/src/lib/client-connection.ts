@@ -1,4 +1,3 @@
-import { BehaviorSubject } from 'rxjs';
 import {
   Logger,
   PeerEvent,
@@ -6,7 +5,9 @@ import {
   PeerTransport,
   IPeerTransport,
   getUserMedia,
+  getDisplayMedia,
 } from '@seek-peer/core'
+import { BehaviorSubject } from 'rxjs'
 import { PeerConfig, PEER_CONFIG } from './config'
 import { Inject, Injectable } from '@angular/core'
 import { ClientStore } from './client-store'
@@ -18,12 +19,12 @@ import * as io from 'socket.io-client'
 export class ClientConnection {
   private socket: SocketIOClient.Socket
 
-
   private peerId: string
+  private peer: RTCPeerConnection
   private peers: RTCPeerConnection[] = []
 
   private stream: MediaStream
-  private active = new BehaviorSubject<boolean>(false);
+  private active = new BehaviorSubject<boolean>(false)
   public active$ = this.active.asObservable()
 
   private logger: Logger = new Logger()
@@ -50,17 +51,14 @@ export class ClientConnection {
 
     this.socket.on(PeerEvent.Connected, ({ id }) => this.makeOffer(id))
 
-    this.socket.on(PeerEvent.Disconnected, ({ id }) => {
-      this.active.next(false)
-      this.clientStore.removeClient(id)
-    })
+    this.socket.on(PeerEvent.Disconnected, ({ id }) => this.close(id))
 
     this.socket.on(PeerEvent.Message, (data: IPeerTransport) =>
       this.handleMessage(data)
     )
   }
 
-  public async connectToRoom() {
+  public connectToRoom = async () => {
     const video = {
       height: 720,
       echoCancellation: true,
@@ -74,6 +72,28 @@ export class ClientConnection {
         stream: stream,
       })
       this.clientStore.addClient(client)
+      this.peer = this.peers[this.peerId]
+      console.log(this.peer)
+
+      this.active.next(true)
+    } catch (err) {
+      this.logger.error("Can't get media stream", err)
+    }
+  }
+
+  public connectScreen = async () => {
+    try {
+      const stream = await getDisplayMedia()
+      this.stream = stream
+      this.socket.emit(PeerEvent.ConnectToRoom)
+      const client = new PeerClient({
+        id: this.socket.id,
+        stream: stream,
+      })
+      this.clientStore.addClient(client)
+      this.peer = this.peers[this.peerId]
+      console.log(this.peer)
+
       this.active.next(true)
     } catch (err) {
       this.logger.error("Can't get media stream", err)
@@ -154,6 +174,13 @@ export class ClientConnection {
     const peer = new RTCPeerConnection()
     this.peers[id] = peer
 
+    /**
+     * Caso seja meu id, armazena
+     * o peer em memória volátil */
+    if (id === this.peerId) {
+      this.peer = peer
+    }
+
     peer.addEventListener(
       'icecandidate',
       ({ candidate }: RTCPeerConnectionIceEvent) => {
@@ -166,8 +193,7 @@ export class ClientConnection {
 
     peer.addEventListener('iceconnectionstatechange', (ev) => {
       if (peer.iceConnectionState === 'failed') {
-        console.log('peer.restartIce()');
-
+        console.log('peer.restartIce()')
       }
     })
     peer.addEventListener('onnegotiationneeded', () => {
@@ -196,10 +222,7 @@ export class ClientConnection {
       }
     } else {
       // Firefox
-      peer.addTrack(
-        this.stream.getVideoTracks()[0],
-        this.stream
-      )
+      peer.addTrack(this.stream.getVideoTracks()[0], this.stream)
       peer.ontrack = ({ streams }: RTCTrackEvent) => {
         this.logger.log('Received new stream')
         const client = new PeerClient({ id: id, stream: streams[0] })
@@ -208,5 +231,23 @@ export class ClientConnection {
     }
 
     return peer
+  }
+
+  close(id: string) {
+    const peer = this.peers[id]
+    if (peer) peer.close()
+
+    const client = this.clientStore.getClient(id)
+    if (client) client.stream.getTracks().forEach((t) => t.stop())
+
+    this.clientStore.removeClient(id)
+  }
+
+  hangup() {
+    this.close(this.peerId)
+    this.socket.emit(PeerEvent.Disconnected)
+    this.peer = null
+    this.peerId = null
+    this.active.next(false)
   }
 }

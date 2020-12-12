@@ -29,7 +29,7 @@ export class PeerGateway implements OnGatewayConnection, OnGatewayDisconnect {
   @SubscribeMessage(PeerEvent.ConnectToRoom)
   onPeerConnect(socket: Socket, data: any) {
     this.logger.log(`Client ${socket.id} connected to room`)
-    socket.broadcast.emit(PeerEvent.Connected, { id: socket.id, })
+    socket.broadcast.emit(PeerEvent.Connected, { id: socket.id })
   }
 
   handleConnection(socket: Socket, ...args: any[]) {
@@ -49,6 +49,5 @@ export class PeerGateway implements OnGatewayConnection, OnGatewayDisconnect {
     socket.broadcast.emit(PeerEvent.Disconnected, {
       id: socket.id,
     })
-    // socket.broadcast.emit(PeerEvent.Disconnected, JSON.stringify(this.sockets.keys()))
   }
 }

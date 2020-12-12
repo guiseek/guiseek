@@ -8,8 +8,8 @@ export const environment = {
     rtc: {
       iceServers: [
         { urls: 'stun:ubuntu.gui:3478' },
-        { urls: 'stun:stun.services.mozilla.com' },
-        { urls: 'stun:stun.stunprotocol.org:3478' },
+        // { urls: 'stun:stun.services.mozilla.com' },
+        // { urls: 'stun:stun.stunprotocol.org:3478' },
       ]
     },
     socket: {
