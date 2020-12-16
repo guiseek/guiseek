@@ -6,7 +6,7 @@
     "ng": "nx",
     "nx": "nx",
     "start": "node dist/apps/sample/gateway/main.js",
-    "build": "nx run sample-gateway:build --with-deps",
+    "build": "nx build sample-gateway --with-deps",
     "test": "ng test",
     "lint": "nx workspace-lint && ng lint",
     "e2e": "ng e2e",
