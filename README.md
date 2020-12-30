@@ -56,7 +56,7 @@ Linguagens e ferramentas que uso ou já usei no dia-a-dia.
   - peer
     - [x] core
     - [x] client
-    - [ ] player
+    - [x] player
   - blog
     - [ ] article
     - [ ] core
