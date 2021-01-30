@@ -40,29 +40,4 @@ Linguagens e ferramentas que uso ou já usei no dia-a-dia.
 ![Visualizações](https://komarev.com/ghpvc/?username=guiseek)
 
 ---
-### Meus estudos recentes estarão neste repositório principal
 
-
-###  `/* @todo */`
-- apps
-  - sample
-    - [x] peer
-    - [x] gateway
-  - blog
-    - [ ] mobile first
-    - [ ] webapp (pwa)
-
-- libs
-  - peer
-    - [x] core
-    - [x] client
-    - [x] player
-  - blog
-    - [ ] article
-    - [ ] core
-    - [ ] assets
-
-### `/* @tips */`
- 
-1. Link do repositório [guiseek/guiseek](https://github.com/guiseek/guiseek)
-1. Saiba mais sobre [como começar](CONTRIBUTING.md)
