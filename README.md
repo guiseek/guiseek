@@ -1,20 +1,12 @@
-## Iaee 👋 👨
+## Opa 👋 👨
 
-### tranquilo? que legal que chegou até aqui 😃
-Prazer, me chamo Guilherme mas pode chamar de gui, seek ou ainda guiseek, heheh.
-
-Sou engenheiro web com 14 ~ 15 anos de experiência profissional, agora atuando como Tech Lead front-end no Itaú Unibanco;
-<i style="font-size:10px">(Devo dizer que está sendo uma experiência incrível!)</i>
-
-Trabalhei como full-stack boa parte da carreira _(fifty / fifty)_, nos últimos anos estive mais focado em arquitetura front-end, entretanto não deixei o backend de lado. Minha stack favorita é [Angular](https://angular.io) no _Front_ e [NestJS](https://nestjs.com/) no _Back_, [TypeScript](https://typescriptlang.org) dos dois lados <3 Gosto muito, pois permite compartilhar código de forma fácil e ainda mais fácil com [NX](https://nx.dev).
-
-Estou sempre avaliando novas tecnologias com potencial!
+Em busca do máximo que a Web tem a oferecer!
 
 ## Assuntos que venho estudando
-- Comunicação web p2p com WebRTC e Sockets
-- Monorepo com NX Workspaces
+- Web Components / Custom Elements
+- Comunicação p2p Web com WebRTC
+- NX Workspaces & Micro frontends
 - Arquitetura limpa em monorepo
-- Design System
 
 ---
 
