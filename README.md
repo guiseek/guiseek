@@ -3,10 +3,11 @@
 Em busca do máximo que a Web tem a oferecer!
 
 ## Assuntos que venho estudando
-- Web Components / Custom Elements
 - Comunicação p2p Web com WebRTC
-- NX Workspaces & Micro frontends
 - Arquitetura limpa em monorepo
+- Web Components / Custom Elements
+- NX Workspaces & Micro frontends
+
 
 ---
 
