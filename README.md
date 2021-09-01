@@ -12,6 +12,7 @@ Em busca do máximo que a Web tem a oferecer!
 ---
 
 ## Redes sociais
+
 [
   ![Twitter Follow](https://img.shields.io/twitter/follow/guiseek?label=GuiSeek&logo=twitter&style=flat-square)
 ](https://bit.ly/3gQLF7q)
@@ -24,5 +25,6 @@ Em busca do máximo que a Web tem a oferecer!
 ](https://bit.ly/3gQLF7q)
 
 [
-  ![guiseek.dev](https://img.shields.io/badge/guiseek-dev-orange)
+  ![guiseek.dev](https://img.shields.io/badge/guiseek-dev-blue)
 ](https://bit.ly/3mURAMq)
+
