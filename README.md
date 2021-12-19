@@ -9,6 +9,10 @@ Em busca do máximo que a Web tem a oferecer!
 - [NX Workspaces & Micro frontends](https://github.com/guiseek/seek-end)
 
 
+## Sobre mim
+- [Coisas que escrevo](https://guiseek.notion.site)
+- [Galeria de fotos](https://guiseek.dev)
+
 ---
 
 ## Redes sociais
