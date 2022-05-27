@@ -3,7 +3,7 @@
 Em busca do máximo que a Web tem a oferecer!
 
 ## Assuntos que venho estudando
-- [Comunicação p2p Web com WebRTC](https://github.com/guiseek/webrtc)
+- [Comunicação p2p Web com WebRTC](https://github.com/guiseek/speek.video)
 - [Arquitetura limpa em monorepo](https://github.com/guiseek/nx-clean)
 - [Web Components / Custom Elements](https://github.com/guiseek/easy-element)
 - [NX Workspaces & Micro frontends](https://github.com/guiseek/seek-end)
