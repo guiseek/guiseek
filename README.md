@@ -34,11 +34,11 @@ Em busca do máximo que a Web tem a oferecer!
 
 ---
 
-Principais repositórios
+## Principais repositórios
 
 
 
-## Architecture
+### Architecture
 [Nx Clean](https://github.com/guiseek/nx-clean)
 Prova de conceito para aplicação de arquitetura limpa, permitindo o compartilhamento de código de forma agnóstica a frameworks
 
@@ -52,13 +52,13 @@ Aqui temos uma camada adaptadora que permite criar CRUDs a partir de um array de
 
 
 
-## Web Speech
+### Web Speech
 [Iara OpenAI GPT3 Web Speech API](https://github.com/guiseek/iara-openai-gpt3-web-speech-api)
 Resolvi testar a famosa I.A. da Microsoft e em seguida fiz uma brincadeira com sua biblioteca `openai`, integrado-a com a API nativa Web Speech. Permite fazer perguntas com sua voz e ouvir as respostas.
 
 
 
-## WebRTC
+### WebRTC
 
 [Signaling](https://github.com/guiseek/signaling)
 POC de conexão WebRTC com triggers para renegociação em casos de falha
@@ -81,7 +81,46 @@ Chat de áudio e vídeo peer to peer com opção de gravação do streaming e en
 
 
 
-## Canvas
+### Animation
+[Time Guide](https://github.com/guiseek/timeguide)
+Interface para criação de animações CSS usando TypeScript.
+
+
+[SVG 3D Cube](https://github.com/guiseek/svg-3d-cube)
+Cubo 3D animado girando usando elemento de imagem SVG e TypeScript.
+
+
+
+### Web Audio
+[Web Audio Player](https://github.com/guiseek/web-audio-player)
+Audio Player com análise de áudio e visualização usando API nativa Web Audio, Canvas e TypeScript.
+
+
+
+### Custom Elements
+[Easy Element](https://github.com/guiseek/easy-element)
+Pequeno framework front-end focado em gerenciamento de estado usando TypeScript e API nativa de componentes, Custom Elements.
+
+
+[Element](https://github.com/guiseek/element)
+Exemplo de criação de um framework usando alguns conceitos utilizados em vários frameworks, com TypeScript e API nativa de componentes, Custom Elements
+
+
+[WorkStream](https://github.com/guiseek/workstream)
+Exemplo de criação de um framework usando decorators para emitir eventos e fazer selecionar elementos no DOM, usando TypeScript e API nativa de componentes, Custom Elements
+
+
+[Web](https://github.com/guiseek/web)
+Exemplos com API nativa de componentes, Custom Elements. Componentes Autocomplete, Checkbox & Checkbox group e Icon.
+
+
+[Calendário](https://github.com/guiseek/calendario)
+Componente de calendário usando TypeScript e API nativa de componentes, Custom Elements
+
+
+
+
+### Canvas
 [Whiteboard](https://github.com/guiseek/whiteboard)
 Quadro de desenho que permite a troca entre o uso de socket ou WebRTC DataCannel.
 
@@ -118,45 +157,6 @@ Crop de vídeo em tempo real usando TypeScript, TypeScript e API nativa de Strea
 Vídeo usando caracteres na formação da imagem renderizada usando TypeScript.
 
 
-
-## Animation
-[Time Guide](https://github.com/guiseek/timeguide)
-Interface para criação de animações CSS usando TypeScript.
-
-
-[SVG 3D Cube](https://github.com/guiseek/svg-3d-cube)
-Cubo 3D animado girando usando elemento de imagem SVG e TypeScript.
-
-
-
-## Web Audio
-[Web Audio Player](https://github.com/guiseek/web-audio-player)
-Audio Player com análise de áudio e visualização usando API nativa Web Audio, Canvas e TypeScript.
-
-
-
-## Custom Elements
-[Easy Element](https://github.com/guiseek/easy-element)
-Pequeno framework front-end focado em gerenciamento de estado usando TypeScript e API nativa de componentes, Custom Elements.
-
-
-[Element](https://github.com/guiseek/element)
-Exemplo de criação de um framework usando alguns conceitos utilizados em vários frameworks, com TypeScript e API nativa de componentes, Custom Elements
-
-
-[WorkStream](https://github.com/guiseek/workstream)
-Exemplo de criação de um framework usando decorators para emitir eventos e fazer selecionar elementos no DOM, usando TypeScript e API nativa de componentes, Custom Elements
-
-
-[Web](https://github.com/guiseek/web)
-Exemplos com API nativa de componentes, Custom Elements. Componentes Autocomplete, Checkbox & Checkbox group e Icon.
-
-
-[Calendário](https://github.com/guiseek/calendario)
-Componente de calendário usando TypeScript e API nativa de componentes, Custom Elements
-
-
-
-## CLI
+### CLI
 [Compiler](https://github.com/guiseek/compiler)
 Exemplo de compilador TypeScript e CLI
