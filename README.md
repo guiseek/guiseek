@@ -43,7 +43,7 @@ Em busca do máximo que a Web tem a oferecer!
 Prova de conceito para aplicação de arquitetura limpa, permitindo o compartilhamento de código de forma agnóstica a frameworks
 
 
-[Doman Event Driven](https://github.com/guiseek/domain-event-driven)
+[Domain Event Driven](https://github.com/guiseek/domain-event-driven)
 Prova de conceito de arquitetura orientada a eventos no front-end.
 
 
