@@ -54,7 +54,7 @@ Aqui temos uma camada adaptadora que permite criar CRUDs a partir de um array de
 
 ### Web Speech
 [Iara OpenAI GPT3 Web Speech API](https://github.com/guiseek/iara-openai-gpt3-web-speech-api)
-Resolvi testar a famosa I.A. da Microsoft e em seguida fiz uma brincadeira com sua biblioteca `openai`, integrado-a com a API nativa Web Speech. Permite fazer perguntas com sua voz e ouvir as respostas.
+Permite fazer perguntas a I.A. GPT-3 usando sua voz, bem como ouvir as respostas, com a API nativa Web Speech...
 
 
 
