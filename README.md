@@ -1,13 +1,13 @@
 ## Opa 👋 👨
 
-
-1. Programador web sênior
-2. Arquiteto front-end
-3. Co-fundador da comunidade DevParaná
-4. Curioso pelo universo
+### Eu sou e estou
+1. Programador web sênior / Arquiteto front-end
+2. Professor / Instrutor / Orientador / Formador
+3. Co-fundador e membro da comunidade DevParaná
+4. Curioso pelo universo distante que não vemos
 5. Em busca do máximo que a Web tem a oferecer
 
-### Habilidades
+### Tenho conhecimento teórico e prático com
 - [x] JS / TS
 - [x] NodeJS
 - [x] Angular
@@ -57,27 +57,13 @@
 
 ---
 
-## Redes sociais
-
-[
-  ![Twitter Follow](https://img.shields.io/twitter/follow/guiseek?label=GuiSeek&logo=twitter&style=flat-square)
-](https://bit.ly/3gQLF7q)
-[
-  ![Linkedin: guilherme-siquinelli](https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/guilherme-siquinelli/)
-](https://bit.ly/3jyG9bp)
-
 [
   ![Visualizações](https://komarev.com/ghpvc/?username=guiseek)
 ](https://bit.ly/3gQLF7q)
 
-[
-  ![guiseek.dev](https://img.shields.io/badge/guiseek-dev-blue)
-](https://bit.ly/3mURAMq)
-
 ---
 
 ## Principais repositórios
-
 
 
 ### Architecture
