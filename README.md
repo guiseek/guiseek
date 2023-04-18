@@ -1,17 +1,59 @@
 ## Opa 👋 👨
 
-Em busca do máximo que a Web tem a oferecer!
 
-## Assuntos que venho estudando
-- [Comunicação p2p Web com WebRTC](https://github.com/guiseek/speek.video)
-- [Arquitetura limpa em monorepo](https://github.com/guiseek/nx-clean)
-- [Web Components / Custom Elements](https://github.com/guiseek/easy-element)
-- [NX Workspaces & Micro frontends](https://github.com/guiseek/seek-end)
+1. Programador web sênior
+2. Arquiteto front-end
+3. Co-fundador da comunidade DevParaná
+4. Curioso pelo universo
+5. Em busca do máximo que a Web tem a oferecer
 
+### Habilidades
+- [x] JS / TS
+- [x] NodeJS
+- [x] Angular
+- [x] NestJS
+- [x] ExpressJS
+- [x] Nx Workspaces
+- [x] HTML semântico
+- [x] A11Y
+- [x] CSS
+- [x] Sass
+- [x] WebRTC
+- [x] Web APIs
+- [x] Figma
+- [x] Design Systems
+- [x] Design Tokens
+- [x] Custom Elements
+- [x] Orientação a objetos
+- [x] Design Patterns
+- [x] Arquitetura limpa
+- [x] Domain-Driven Design
+- [x] Arquitetura em camadas
+- [x] Governança de Monorepos
+- [x] Nx Plugins (Generators & Executors)
+- [x] Controle de versão (git)
+- [x] Bibliotecas publicáveis
+- [x] Versionamento semântico
+- [x] Releases automatizados
+- [x] Automatização em CI
+- [x] Visão e mente atenta a DX
+- [x] Membro de grupos W3C
+- [x] Games Web
+- [ ] Blender 
 
-## Sobre mim
-- [Coisas que escrevo](https://guiseek.notion.site)
-- [Galeria de fotos](https://guiseek.dev)
+---
+
+### Comunidade DevParaná
+[![Assista ao vídeo](https://i9.ytimg.com/vi_webp/lB6yR2TBkX0/mqdefault.webp?v=643dff04&sqp=CND896EG&rs=AOn4CLB4F0OxdUtt_eoRhshYI6JM4mOn6A)](https://youtu.be/lB6yR2TBkX0)
+
+---
+
+### Links
+- [guiseek.dev](https://guiseek.dev)
+- [dev.to/guiseek](https://dev.to/guiseek)
+- [guiseek.notion.site](https://guiseek.notion.site)
+- [twitter.com/guiseek](https://twitter.com/guiseek)
+- [in/guilherme-siquinelli](https://www.linkedin.com/in/guilherme-siquinelli/)
 
 ---
 
