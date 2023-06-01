@@ -16,7 +16,12 @@
 
 ---
 
-<section style="display: flex; flex-flow: row wrap; align-items: flex-start; padding: 0px; gap: 46px;">
+<section>
+	<style>
+		section {
+			display: flex; flex-flow: row wrap; align-items: flex-start; padding: 0px; gap: 46px;
+		}
+	</style>
 	<img src="./assets/git.svg" style="margin-right: 60px" />
 	<img src="./assets/angular material.svg" style="margin-right: 60px" />
 	<img src="./assets/angular.svg" style="margin-right: 60px" />
