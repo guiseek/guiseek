@@ -17,22 +17,22 @@
 ---
 
 <section style="display: flex; flex-flow: row wrap; align-items: flex-start; padding: 0px; gap: 46px;">
-	<img src="./assets/git.svg" />
-	<img src="./assets/angular material.svg" />
-	<img src="./assets/angular.svg" />
-	<img src="./assets/css.svg" />
-	<img src="./assets/github.svg" />
-	<img src="./assets/html.svg" />
-	<img src="./assets/javascript.svg" />
-	<img src="./assets/nest.svg" />
-	<img src="./assets/nodejs.svg" />
-	<img src="./assets/nx.svg" />
-	<img src="./assets/pwa.svg" />
-	<img src="./assets/rxjs.svg" />
-	<img src="./assets/typescript.svg" />
-	<img src="./assets/vite.svg" />
-	<img src="./assets/w3c.svg" />
-	<img src="./assets/webpack.svg" />
+	<img src="./assets/git.svg" style="margin-right: 60px" />
+	<img src="./assets/angular material.svg" style="margin-right: 60px" />
+	<img src="./assets/angular.svg" style="margin-right: 60px" />
+	<img src="./assets/css.svg" style="margin-right: 60px" />
+	<img src="./assets/github.svg" style="margin-right: 60px" />
+	<img src="./assets/html.svg" style="margin-right: 60px" />
+	<img src="./assets/javascript.svg" style="margin-right: 60px" />
+	<img src="./assets/nest.svg" style="margin-right: 60px" />
+	<img src="./assets/nodejs.svg" style="margin-right: 60px" />
+	<img src="./assets/nx.svg" style="margin-right: 60px" />
+	<img src="./assets/pwa.svg" style="margin-right: 60px" />
+	<img src="./assets/rxjs.svg" style="margin-right: 60px" />
+	<img src="./assets/typescript.svg" style="margin-right: 60px" />
+	<img src="./assets/vite.svg" style="margin-right: 60px" />
+	<img src="./assets/w3c.svg" style="margin-right: 60px" />
+	<img src="./assets/webpack.svg" style="margin-right: 60px" />
 </section>
 
 
