@@ -4,8 +4,8 @@
 1. Programador web sênior / Arquiteto front-end
 2. Professor / Instrutor / Orientador / Formador
 3. Co-fundador e membro da comunidade DevParaná
-4. Curioso pelo universo distante que não vemos
-5. Em busca do máximo que a Web tem a oferecer
+4. Em busca do máximo que a Web tem a oferecer
+5. Curioso pelo universo
 
 **Links**: [guiseek.dev](https://guiseek.dev) / [dev.to/guiseek](https://dev.to/guiseek) / [guiseek.notion.site](https://guiseek.notion.site) / [twitter.com/guiseek](https://twitter.com/guiseek) / [in/guilherme-siquinelli](https://www.linkedin.com/in/guilherme-siquinelli/)
 
