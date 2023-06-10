@@ -131,6 +131,15 @@ Componente de calendário usando TypeScript e API nativa de componentes, Custom 
 
 
 ### Canvas
+
+[Video preview](https://github.com/guiseek/video-preview)
+Gerador de miniaturas de visualização de vídeo escrito em TypeScript.
+
+
+[Audio wave](https://github.com/guiseek/audio-wave)
+Gerador de visualização de ondas de áudio escrito em TypeScript.
+
+
 [Whiteboard](https://github.com/guiseek/whiteboard)
 Quadro de desenho que permite a troca entre o uso de socket ou WebRTC DataCannel.
 
