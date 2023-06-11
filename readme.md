@@ -54,8 +54,7 @@
 | [Domain Event Driven](https://github.com/guiseek/domain-event-driven) | POC de arquitetura orientada a eventos no front-end. | 
 | [Dev Exp](https://github.com/guiseek/devexp) | CRUDs a partir de um array de strings. | 
 | **Web Speech** | | 
-
-| [Iara OpenAI GPT3 Web Speech API](https://github.com/guiseek/iara-openai-gpt3-web-speech-api) | Converse com a I.A. GPT-3 usando sua voz e ouça as respostas. (Web Speech API) | 
+| [GPT3 por voz](https://github.com/guiseek/iara-openai-gpt3-web-speech-api) | Converse com a I.A. por voz e ouça as respostas. (Web Speech API) | 
 | **WebRTC** | | 
 | [Signaling](https://github.com/guiseek/signaling) | POC de conexão WebRTC com triggers para renegociação em casos de falha | 
 | [WebRTC](https://github.com/guiseek/webrtc) | Workshopp apresentado na Codecon sobre TypeScript e WebRTC | 
@@ -71,7 +70,7 @@
 | [Easy Element](https://github.com/guiseek/easy-element) | Pequeno framework front-end focado em gerenciamento de estado (Custom Elements API). | 
 | [Element](https://github.com/guiseek/element) | Framework aplicando patterns utilizados em vários frameworks (Custom Elements API). | 
 | [WorkStream](https://github.com/guiseek/workstream) | Framework com decorators para emitir eventos e selecionar elementos no DOM (Custom Elements API). | 
-| [Web](https://github.com/guiseek/web) | Componentes Autocomplete, Checkbox, Checkbox group com estado indeterminado automático e Icon. (Custom Elements API). | 
+| [Web](https://github.com/guiseek/web) | Autocomplete, Checkbox, Checkbox group com estado indeterminado. (Custom Elements API). | 
 | [Calendário](https://github.com/guiseek/calendario) | Componente de calendário (Custom Elements API). | 
 | **Canvas** | | 
 | [Video preview](https://github.com/guiseek/video-preview) | Gerador de thumbnails de vídeos no Front-end (Vanilla). | 
