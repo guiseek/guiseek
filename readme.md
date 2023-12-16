@@ -7,7 +7,7 @@
 4. Sempre em busca do máximo para a Web
 5. Curioso pelo universo que nos circunda
 
-**Links**: [guiseek.dev](https://guiseek.dev) / [dev.to/guiseek](https://dev.to/guiseek) / [guiseek.notion.site](https://guiseek.notion.site) / [twitter.com/guiseek](https://twitter.com/guiseek) / [in/guilherme-siquinelli](https://www.linkedin.com/in/guilherme-siquinelli/)
+**Links**:  [youtube.com/@GuiSeek](https://www.youtube.com/@GuiSeek) / [guiseek.dev](https://guiseek.dev) / [dev.to/guiseek](https://dev.to/guiseek) / [guiseek.notion.site](https://guiseek.notion.site) / [twitter.com/guiseek](https://twitter.com/guiseek) / [in/guilherme-siquinelli](https://www.linkedin.com/in/guilherme-siquinelli/)
 
 [
   ![Visualizações](https://komarev.com/ghpvc/?username=guiseek)
@@ -15,29 +15,36 @@
 
 ---
 
-## Projetos legais
+### Stack
 
-### Canal no Youtube
-
-<a href="https://www.youtube.com/@GuiSeek">
-  <img src="./assets/youtube-channel.png" />
-</a>
-
-### DevParaná Conf
-[![Assista ao vídeo](./assets/devpr-conf-cover.png)](https://youtu.be/lB6yR2TBkX0)
+<img src="./assets/stack.svg" />
 
 ---
 
-### C4 model for Figma
+### Side projects
+
+#### C4 model for Figma
 
 <a href="https://www.figma.com/community/file/1122907722147721168/the-c4-model-for-figma">
   <img src="./assets/c4-model-for-figma.png" />
 </a>
 
-### Create nx workspace with Figma compoonents
+#### Create nx workspace with Figma compoonents
 <a href="https://github.com/guiseek/create-nx-workspace-with-figma">
   <img src="./assets/create-nx-workspace-with-figma-components.svg" />
 </a>
+
+---
+
+
+## Canal no Youtube
+
+<a href="https://www.youtube.com/@GuiSeek">
+  <img src="./assets/youtube-channel.png" />
+</a>
+
+## DevParaná Conf
+[![Assista ao vídeo](./assets/devpr-conf-cover.png)](https://youtu.be/lB6yR2TBkX0)
 
 ---
 
