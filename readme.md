@@ -1,11 +1,11 @@
-## Opa 👋 👨
+## Opa, edaee 👋 👨
 
 ### Eu sou e estou
-1. Programador web sênior / Arquiteto front-end
-2. Professor / Instrutor / Orientador / Formador
-3. Co-fundador e membro da comunidade DevParaná
-4. Em busca do máximo que a Web tem a oferecer
-5. Curioso pelo universo
+1. Arquiteto Web @ Santander
+2. Professor / Orientador / Formador
+3. Organizador da DevParaná Conference
+4. Sempre em busca do máximo para a Web
+5. Curioso pelo universo que nos circunda
 
 **Links**: [guiseek.dev](https://guiseek.dev) / [dev.to/guiseek](https://dev.to/guiseek) / [guiseek.notion.site](https://guiseek.notion.site) / [twitter.com/guiseek](https://twitter.com/guiseek) / [in/guilherme-siquinelli](https://www.linkedin.com/in/guilherme-siquinelli/)
 
@@ -13,35 +13,31 @@
   ![Visualizações](https://komarev.com/ghpvc/?username=guiseek)
 ](https://bit.ly/3gQLF7q)
 
-
 ---
 
-<section>
+## Projetos legais
 
-<img src="./assets/w3c.svg" style="margin-right: 60px" />
-<img src="./assets/html.svg" style="margin-right: 60px" />
-<img src="./assets/css.svg" style="margin-right: 60px" />
-<img src="./assets/javascript.svg" style="margin-right: 60px" />
-<img src="./assets/typescript.svg" style="margin-right: 60px" />
-<img src="./assets/rxjs.svg" style="margin-right: 60px" />
-<img src="./assets/angular.svg" style="margin-right: 60px" />
-<img src="./assets/angular material.svg" style="margin-right: 60px" />
-<img src="./assets/pwa.svg" style="margin-right: 60px" />
-<img src="./assets/nodejs.svg" style="margin-right: 60px" />
-<img src="./assets/nest.svg" style="margin-right: 60px" />
-<img src="./assets/git.svg" style="margin-right: 60px" />
-<img src="./assets/github.svg" style="margin-right: 60px" />
-<img src="./assets/nx.svg" style="margin-right: 60px" />
-<img src="./assets/vite.svg" style="margin-right: 60px" />
-<img src="./assets/webpack.svg" style="margin-right: 60px" />
+### Canal no Youtube
 
-</section>
+<a href="https://www.youtube.com/@GuiSeek">
+  <img src="./assets/youtube-channel.png" />
+</a>
 
-
----
-
-### Comunidade DevParaná
+### DevParaná Conf
 [![Assista ao vídeo](./assets/devpr-conf-cover.png)](https://youtu.be/lB6yR2TBkX0)
+
+---
+
+### C4 model for Figma
+
+<a href="https://www.figma.com/community/file/1122907722147721168/the-c4-model-for-figma">
+  <img src="./assets/c4-model-for-figma.png" />
+</a>
+
+### Create nx workspace with Figma compoonents
+<a href="https://github.com/guiseek/create-nx-workspace-with-figma">
+  <img src="./assets/create-nx-workspace-with-figma-components.svg" />
+</a>
 
 ---
 
