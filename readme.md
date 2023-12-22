@@ -7,19 +7,32 @@
 4. Sempre em busca do máximo para a Web
 5. Curioso pelo universo que nos circunda
 
-**Links**:  [youtube.com/@GuiSeek](https://www.youtube.com/@GuiSeek) / [guiseek.dev](https://guiseek.dev) / [dev.to/guiseek](https://dev.to/guiseek) / [guiseek.notion.site](https://guiseek.notion.site) / [twitter.com/guiseek](https://twitter.com/guiseek) / [in/guilherme-siquinelli](https://www.linkedin.com/in/guilherme-siquinelli/)
+**Links**:
+- [Conteúdo no Notion](https://guiseek.notion.site)
+- [Conteúdo no YouTube](https://www.youtube.com/@guiseek)
+- [Conteúdo no Dev.to](https://dev.to/guiseek)
+- [Eurotrip em 2022](https://guiseek.github.io/photos/)
+- [Perfil no Linked In](https://www.linkedin.com/in/guilherme-siquinelli/)
+- [Perfil no Twitter](https://x.com/guiseek)
+- [DevPR das antiga](https://guiseek.dev)
 
-[
-  ![Visualizações](https://komarev.com/ghpvc/?username=guiseek)
-](https://bit.ly/3gQLF7q)
+<br />
 
----
+## Arquitetura
 
-### Stack
+- [Dev](https://github.com/guiseek/dev) (POC) Arquitetura em camadas e geradores de CRUD 100% funcionais com código de qualidade
+- [Nx Clean](https://github.com/guiseek/nx-clean) (POC) para compartilhamento de código de forma agnóstica a frameworks
+- [Domain Event Driven](https://github.com/guiseek/domain-event-driven): (POC) de arquitetura orientada a eventos no front-end.
+- [Dev Exp](https://github.com/guiseek/devexp): CRUDs a partir de um array de strings.
 
-<img src="./assets/stack.svg" />
+### Fora da caixa
+- [TSX vanilla](https://github.com/guiseek/photos): Projeto para apresentar fotos escrito em TSX com typescript puro
+- [Web Navigation](https://github.com/guiseek/router): Implementação de um router web usando a nova Web API com suporte nativo em navegadores
+- [Barcode API](https://github.com/guiseek/barcode): Leitura de código de barras e QRCode usando Web API nativa
+- [Nx Figma Plugin](https://github.com/guiseek/create-nx-workspace-with-figma): Plugin para criação de repositórios Nx a partir de componentes Figma
+- [WebRTC & Web Audio](https://github.com/guiseek/signaling): Streaming de áudio peer to peer usando Web API nativa
 
----
+
 
 ### Side projects
 
@@ -89,3 +102,10 @@
 | [Video ASCII](https://github.com/guiseek/video-ascii) | Vídeo renderizado em ASCII (Vanilla). | 
 | **CLI** | | 
 | [Compiler](https://github.com/guiseek/compiler) | Compilador TypeScript e CLI (Vanilla). | 
+
+
+---
+
+[
+  ![Visualizações](https://komarev.com/ghpvc/?username=guiseek)
+](https://bit.ly/3gQLF7q)
