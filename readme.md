@@ -66,6 +66,7 @@
 
 | **Architecture** | | 
 | --- | --- |
+| [Micro Front-end](https://github.com/guiseek/react-mfe) | React Micro front-ends & Module Federation |
 | [Nx Clean](https://github.com/guiseek/nx-clean) | POC para compartilhamento de código de forma agnóstica a frameworks |
 | [Domain Event Driven](https://github.com/guiseek/domain-event-driven) | POC de arquitetura orientada a eventos no front-end. | 
 | [Dev Exp](https://github.com/guiseek/devexp) | CRUDs a partir de um array de strings. | 
