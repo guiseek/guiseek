@@ -1,20 +1,22 @@
 ## Opa, edaee 👋 👨
 
 ### Eu sou e estou
-1. Arquiteto Web @ Santander
-2. Professor / Orientador / Formador
-3. Organizador da DevParaná Conference
-4. Sempre em busca do máximo para a Web
+1. Arquiteto Web
+2. [Mentor](https://www.codaqui.dev/quero/mentoria) na Codaqui
+3. Co-fundador da [DevParaná](https://devpr.org)
+4. Desbravador dos limites da Web
 5. Curioso pelo universo que nos circunda
 
 **Links**:
-- [Conteúdo no Notion](https://guiseek.notion.site)
+- [Documentos úteis](https://docs.guiseek.dev)
 - [Conteúdo no YouTube](https://www.youtube.com/@guiseek)
+- [Conteúdo no Notion](https://guiseek.notion.site)
 - [Conteúdo no Dev.to](https://dev.to/guiseek)
 - [Eurotrip em 2022](https://guiseek.github.io/photos/)
 - [Perfil no Linked In](https://www.linkedin.com/in/guilherme-siquinelli/)
+- [DevPR Old School](https://guiseek.dev)
 - [Perfil no Twitter](https://x.com/guiseek)
-- [DevPR das antiga](https://guiseek.dev)
+
 
 <br />
 
