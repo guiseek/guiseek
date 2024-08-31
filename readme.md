@@ -28,7 +28,7 @@
 </a>
 
 ## DevParaná Conf 2024
-![Captura de Tela 2024-08-31 às 13 23 09](https://github.com/user-attachments/assets/23854992-8f45-4a9e-924c-a9376a8a5c5c)
+[![Captura de Tela 2024-08-31 às 13 23 09](https://github.com/user-attachments/assets/23854992-8f45-4a9e-924c-a9376a8a5c5c)](https://youtu.be/EdrFuDo5H8k)
 
 
 ## DevParaná Conf 2023
