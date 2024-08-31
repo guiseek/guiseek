@@ -20,6 +20,13 @@
 
 <br />
 
+## Novidades
+
+- [Creative Filling](https://github.com/guiseek/creative-filling) [[demo](https://guiseek.github.io/creative-filling)] Editor de imagens Web - Progressive Web App (Vanilla TypeScript)
+- [Creative Writer](https://github.com/DeveloperParana/creative-writer) [[demo](https://guiseek.github.io/creative-filling)] Criador de poster para divulgação de Meetups da comunidade DevParaná
+
+<br />
+
 ## Arquitetura
 
 - [Dev](https://github.com/guiseek/dev) (POC) Arquitetura em camadas e geradores de CRUD 100% funcionais com código de qualidade
