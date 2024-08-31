@@ -18,6 +18,23 @@
 - [Perfil no Twitter](https://x.com/guiseek)
 
 
+---
+
+
+## Canal no Youtube
+
+<a href="https://www.youtube.com/@GuiSeek">
+  <img src="./assets/youtube-channel.png" />
+</a>
+
+## DevParaná Conf 2024
+![Captura de Tela 2024-08-31 às 13 23 09](https://github.com/user-attachments/assets/23854992-8f45-4a9e-924c-a9376a8a5c5c)
+
+
+## DevParaná Conf 2023
+[![Assista ao vídeo](./assets/devpr-conf-cover.png)](https://youtu.be/lB6yR2TBkX0)
+
+
 <br />
 
 ## Novidades
@@ -57,18 +74,6 @@
 <a href="https://github.com/guiseek/create-nx-workspace-with-figma">
   <img src="./assets/create-nx-workspace-with-figma-components.svg" />
 </a>
-
----
-
-
-## Canal no Youtube
-
-<a href="https://www.youtube.com/@GuiSeek">
-  <img src="./assets/youtube-channel.png" />
-</a>
-
-## DevParaná Conf
-[![Assista ao vídeo](./assets/devpr-conf-cover.png)](https://youtu.be/lB6yR2TBkX0)
 
 ---
 
