@@ -1,11 +1,29 @@
-## Opa, edaee 👋 👨
+# Opa, edaee 👋 👨
 
-### Eu sou e estou
+## Eu sou e estou
 1. Arquiteto Web
 2. [Mentor](https://www.codaqui.dev/quero/mentoria) na Codaqui
 3. Co-fundador da [DevParaná](https://devpr.org)
 4. Desbravador dos limites da Web
 5. Curioso pelo universo que nos circunda
+
+## Conteúdo
+
+<figure>
+  <a style="border: 2px solid #333" href="https://conteudode.dev/pdf/nx">
+    <img width="360" src="https://github.com/user-attachments/assets/2ada6d68-b0f8-4b08-aa2a-4f92a3e364b9" />
+  </a>
+  <br />
+  <figcaption>
+    <a style="border: 2px solid #333" href="https://conteudode.dev/pdf/nx">
+      Download
+    </a>
+  </figcaption>
+</figure>
+
+<br />
+<br />
+<br />
 
 **Links**:
 - [Documentos úteis](https://docs.guiseek.dev)
