@@ -66,6 +66,7 @@
 
 ## Arquitetura
 
+- [GetLab](https://github.com/guiseek/getlab) Arquitetura em camadas com dados locais ou banco NoSQL configurando injeção de dependências
 - [Dev](https://github.com/guiseek/dev) (POC) Arquitetura em camadas e geradores de CRUD 100% funcionais com código de qualidade
 - [Nx Clean](https://github.com/guiseek/nx-clean) (POC) para compartilhamento de código de forma agnóstica a frameworks
 - [Domain Event Driven](https://github.com/guiseek/domain-event-driven): (POC) de arquitetura orientada a eventos no front-end.
