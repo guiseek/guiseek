@@ -60,7 +60,7 @@
 - [Snake 3D](https://github.com/guiseek/snake-3d) [[demo](https://guiseek.github.io/snake-3d)] Jogue na timeline do Github 3D
 - [Solar War](https://github.com/guiseek/solar-war) [[demo](https://guiseek.github.io/solar-war)] Controle uma nave no sistema solar
 - [Creative Filling](https://github.com/guiseek/creative-filling) [[demo](https://guiseek.github.io/creative-filling)] Edite imagens na Web - Progressive Web App (Vanilla TypeScript)
-- [Creative Writer](https://github.com/DeveloperParana/creative-writer) [[demo](https://guiseek.github.io/creative-filling)] Crie posters para divulgação de Meetups da comunidade DevParaná
+- [Creative Writer](https://github.com/DeveloperParana/creative-writer) [[demo](https://DeveloperParana.github.io/creative-writer)] Crie posters para divulgação de Meetups da comunidade DevParaná
 
 <br />
 
