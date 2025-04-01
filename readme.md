@@ -1,6 +1,6 @@
 # Codificador por natureza e Arquiteto Web por profissão.
 
-[Arquiteto Web](https://conteudode.dev/pdf/nx) ⌁ [Nx Champion](https://nx.dev/community) ⌁ [Mantenedor Github Brasil](https://githubbrasil.com/open-source/maintainers#:~:text=Guilherme%20Siquinelli,e%20curioso%20pelo...) ⌁ [Mentor na Codaqui](https://www.codaqui.dev/quero/mentoria) ⌁ [Co-fundador da DevParaná](https://github.com/developerParana) ⌁ [Produtor de conteúdo](https://www.youtube.com/guiseek)
+⌁ [Arquiteto Web](https://conteudode.dev/pdf/nx) ⌁ [Nx Champion](https://nx.dev/community) ⌁ [Mantenedor Github Brasil](https://githubbrasil.com/open-source/maintainers#:~:text=Guilherme%20Siquinelli,e%20curioso%20pelo...) ⌁ [Mentor na Codaqui](https://www.codaqui.dev/quero/mentoria) ⌁ [Co-fundador da DevParaná](https://github.com/developerParana) ⌁
 
 Como co-fundador da comunidade DevParaná, ajudo orientar a próxima geração de Devs
 
