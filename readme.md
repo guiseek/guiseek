@@ -1,64 +1,26 @@
-# Opa, edaee 👋 👨
+# Codificador por natureza e Arquiteto Web por profissão.
 
-## Eu sou e estou
-1. Arquiteto Web
-2. [Mentor](https://www.codaqui.dev/quero/mentoria) na Codaqui
-3. Co-fundador da [DevParaná](https://devpr.org)
-4. Desbravador dos limites da Web
-5. Curioso pelo universo que nos circunda
+[Arquiteto Web](https://conteudode.dev/pdf/nx) ⌁ [Nx Champion](https://nx.dev/community) ⌁ [Mantenedor Open Source](https://githubbrasil.com/open-source/maintainers#:~:text=Guilherme%20Siquinelli,e%20curioso%20pelo...) ⌁ [Mentor](https://www.codaqui.dev/quero/mentoria) ⌁ [Co-fundador da DevParaná](https://github.com/developerParana) ⌁ [Produtor de conteúdo técnico](https://www.youtube.com/guiseek)
 
-## Conteúdo
+Como co-fundador da comunidade DevParaná, ajudo orientar a próxima geração de Devs
 
-<figure>
-  <a style="border: 2px solid #333" href="https://conteudode.dev/pdf/nx">
-    <img width="360" src="https://github.com/user-attachments/assets/2ada6d68-b0f8-4b08-aa2a-4f92a3e364b9" />
-  </a>
-  <br />
-  <figcaption>
-    <a style="border: 2px solid #333" href="https://conteudode.dev/pdf/nx">
-      Download
-    </a>
-  </figcaption>
-</figure>
-
-<br />
-<br />
-<br />
+Quando não estou trabalhando, procuro fortalecer os alicerces da comunidade
 
 **Links**:
+- [Linked In](https://www.linkedin.com/in/guilherme-siquinelli/)
 - [Documentos úteis](https://docs.guiseek.dev)
-- [Conteúdo no YouTube](https://www.youtube.com/@guiseek)
 - [Conteúdo no Notion](https://guiseek.notion.site)
 - [Conteúdo no Dev.to](https://dev.to/guiseek)
-- [Eurotrip em 2022](https://guiseek.github.io/photos/)
-- [Perfil no Linked In](https://www.linkedin.com/in/guilherme-siquinelli/)
 - [DevPR Old School](https://guiseek.dev)
-- [Perfil no Twitter](https://x.com/guiseek)
-
+- [Eurotrip em 2022](https://guiseek.github.io/photos/)
 
 ---
-
-
-## Canal no Youtube
-
-<a href="https://www.youtube.com/@GuiSeek">
-  <img src="./assets/youtube-channel.png" />
-</a>
-
-## DevParaná Conf 2024
-[![Captura de Tela 2024-08-31 às 13 23 09](https://github.com/user-attachments/assets/23854992-8f45-4a9e-924c-a9376a8a5c5c)](https://youtu.be/EdrFuDo5H8k)
-
-
-## DevParaná Conf 2023
-[![Assista ao vídeo](./assets/devpr-conf-cover.png)](https://youtu.be/lB6yR2TBkX0)
-
 
 <br />
 
 ## Novidades
 
-- [Snake 3D](https://github.com/guiseek/snake-3d) [[demo](https://guiseek.github.io/snake-3d)] Jogue na timeline do Github 3D
-- [Solar War](https://github.com/guiseek/solar-war) [[demo](https://guiseek.github.io/solar-war)] Controle uma nave no sistema solar
+- [Skateboard 3D](https://github.com/guiseek/skateboard) [[demo](https://guiseek.github.io/skateboard)]
 - [Creative Filling](https://github.com/guiseek/creative-filling) [[demo](https://guiseek.github.io/creative-filling)] Edite imagens na Web - Progressive Web App (Vanilla TypeScript)
 - [Creative Writer](https://github.com/DeveloperParana/creative-writer) [[demo](https://DeveloperParana.github.io/creative-writer)] Crie posters para divulgação de Meetups da comunidade DevParaná
 
@@ -71,6 +33,15 @@
 - [Nx Clean](https://github.com/guiseek/nx-clean) (POC) para compartilhamento de código de forma agnóstica a frameworks
 - [Domain Event Driven](https://github.com/guiseek/domain-event-driven): (POC) de arquitetura orientada a eventos no front-end.
 - [Dev Exp](https://github.com/guiseek/devexp): CRUDs a partir de um array de strings.
+
+## Jogos
+
+- [Snake 3D](https://github.com/guiseek/snake-3d) [[demo](https://guiseek.github.io/snake-3d)] Jogue na timeline do Github 3D
+- [Solar War](https://github.com/guiseek/solar-war) [[demo](https://guiseek.github.io/solar-war)] Controle uma nave no sistema solar
+- [Deaht Tower](https://github.com/guiseek/death-tower) Jogo escrito em TypeScript compatível Gamepad API. | 
+- [Warship Space](https://github.com/guiseek/warship.space) Jogo com navegação no espaço e efeito parallax nas estrelas. (Vanilla) | 
+- [Snake Mini](https://github.com/guiseek/snake-mini) Snake Game em 100 linhas | 
+
 
 ### Fora da caixa
 - [TSX vanilla](https://github.com/guiseek/photos): Projeto para apresentar fotos escrito em TSX com typescript puro
@@ -128,9 +99,6 @@
 | [Video preview](https://github.com/guiseek/video-preview) | Gerador de thumbnails de vídeos no Front-end (Vanilla). | 
 | [Audio wave](https://github.com/guiseek/audio-wave) | Gerador de ondas de áudio no Front-end. (Vanilla, Web Audio API). | 
 | [Whiteboard](https://github.com/guiseek/whiteboard) | Quadro de desenho p2p. (WebRTC DataCannel API). | 
-| [Deaht Tower](https://github.com/guiseek/death-tower) | Jogo escrito em TypeScript compatível Gamepad API. | 
-| [Warship Space](https://github.com/guiseek/warship.space) | Jogo com navegação no espaço e efeito parallax nas estrelas. (Vanilla) | 
-| [Snake Mini](https://github.com/guiseek/snake-mini) | Snake Game em 100 linhas | 
 | [TypeScript Cloth](https://github.com/guiseek/typescript-cloth) | Cortina 3D em TypeScript. | 
 | [Chroma Key](https://github.com/guiseek/chroma-key) | Efeito Chroma Key para fundo verde (Vanilla). | 
 | [Report Bug](https://github.com/guiseek/report-bug) | Gravação de captura da tela em vídeo no formato webm (Media Recorder API). | 
